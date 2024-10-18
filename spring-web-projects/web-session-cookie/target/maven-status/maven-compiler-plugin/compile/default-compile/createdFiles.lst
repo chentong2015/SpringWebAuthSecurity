@@ -1,0 +1,6 @@
+org/example/BasicAuthApplication.class
+org/example/controller/LoginController.class
+org/example/config/SessionConfig$CookieSessionFilter.class
+org/example/config/SessionConfig.class
+org/example/controller/QueryController.class
+org/example/model/User.class

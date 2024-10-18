@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "auth",
+      "type": "com.example.security.config.AuthUserProperties",
+      "sourceType": "com.example.security.config.AuthUserProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "auth.user-details",
+      "type": "java.util.Set<org.springframework.security.core.userdetails.UserDetails>",
+      "sourceType": "com.example.security.config.AuthUserProperties"
+    },
+    {
+      "name": "auth.users",
+      "type": "java.util.Map<java.lang.String,com.example.security.config.AuthUserProperties$UserDetail>",
+      "sourceType": "com.example.security.config.AuthUserProperties"
+    }
+  ],
+  "hints": []
+}

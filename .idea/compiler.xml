@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sample-web-security-project" />
+        <module name="spring-web-security-login" />
+        <module name="auth-security" />
+        <module name="web-https-ssl" />
+        <module name="web-password" />
+        <module name="web-session-cookie" />
+        <module name="spring-web-security5" />
+        <module name="spring-web-security-oauth2" />
+        <module name="spring-web-security6" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-web-security-oauth2" options="-parameters" />
+    </option>
+  </component>
+</project>
