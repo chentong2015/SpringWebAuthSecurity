@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auth-web-session-cookie" />
         <module name="spring-web-https-ssl" />
-        <module name="auth-session-cookie" />
         <module name="spring-web-project" />
-        <module name="auth-login-password" />
         <module name="spring-web-security5" />
+        <module name="auth-password" />
         <module name="spring-web-security6" />
         <module name="auth-jwt-token" />
+        <module name="auth-web-login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

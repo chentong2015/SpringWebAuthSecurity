@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>auth-session-cookie</artifactId>
+    <artifactId>auth-web-session-cookie</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
