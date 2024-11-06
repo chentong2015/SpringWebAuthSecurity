@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/1. JWT验证流程.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/2. JWT授权模型.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken生成.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/OpenID Token.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/1. Token令牌生成.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/JsonWebToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/Secret Key Length.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/1. JWT验证流程.png" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/2. JWT验证流程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/2. JWT授权模型.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/3. JWT授权模型.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken生成.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-jwt-token/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/config/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/config/WebSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,27 +61,41 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Work My Projects/Java Spring Master/SpringWebAuthSecurity&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/chent5/OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc/Desktop/spring-security-core-2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java\key" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\json-web-token" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\openid-token" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-session-cookie" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-project\src\main\resources" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-project\src\main\java\spring\web\main" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JsonWebToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JsonWebToken" />
+      <module name="auth-jwt-token" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JsonWebToken" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730892699480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update jwt token module">
+      <created>1730894090872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730894090872</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean project and create new modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean project and create new modules" />
+    <MESSAGE value="update jwt token module" />
+    <option name="LAST_COMMIT_MESSAGE" value="update jwt token module" />
   </component>
 </project>
