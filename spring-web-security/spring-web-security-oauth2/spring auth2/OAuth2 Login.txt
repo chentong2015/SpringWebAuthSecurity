@@ -1,9 +1,0 @@
-OAuth2 使用第三方的社交平台Login到Web App，不提供用户注册行为
-Google API使用OAuth2.0协议进行身份验证和授权，需要从Google API Console获取OAuth2客户端凭据
-客户端应用会向Google授权服务器请求访问令牌，从响应中提取令牌并将令牌发送到您要访问的Google API
-
-如果只考虑单体架构、单一服务提供者，则并无引入OAuth的必要
-Spring Security的表单认证就能很良好、便捷地解决认证和授权的问题
-
-https://www.baeldung.com/spring-security-5-oauth2-login
-https://console.cloud.google.com/apis/credentials/

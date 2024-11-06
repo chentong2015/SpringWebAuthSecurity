@@ -6,17 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sample-web-security-project" />
-        <module name="spring-web-security-login" />
-        <module name="auth-security" />
-        <module name="web-https-ssl" />
-        <module name="web-password" />
-        <module name="web-session-cookie" />
+        <module name="spring-web-https-ssl" />
+        <module name="auth-session-cookie" />
+        <module name="spring-web-project" />
+        <module name="auth-login-password" />
         <module name="spring-web-security5" />
-        <module name="spring-web-security-oauth2" />
         <module name="spring-web-security6" />
+        <module name="auth-jwt-token" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-security" target="17" />
+      <module name="sample-web-security-project" target="17" />
+      <module name="spring-web-projects" target="17" />
+      <module name="spring-web-security-login" target="15" />
+      <module name="spring-web-security-oauth2" target="15" />
+      <module name="web-password" target="17" />
+      <module name="web-session-cookie" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
