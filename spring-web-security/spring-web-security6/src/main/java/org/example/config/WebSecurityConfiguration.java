@@ -14,14 +14,14 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfiguration {
 
+    // antMatchers在新版本中废弃使用
+    // requests.antMatchers("/index").permitAll();
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         System.out.println("Inject bean FilterChain");
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> {
-                    // antMatchers在新版本中废弃使用
-                    // requests.antMatchers("/index").permitAll();
                     requests.requestMatchers("/token/get-token").permitAll();
                     requests.requestMatchers("/health").permitAll();
                     requests.anyRequest().authenticated();
