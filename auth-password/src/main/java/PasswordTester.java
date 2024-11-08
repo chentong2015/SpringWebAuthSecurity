@@ -1,26 +1,20 @@
-import encoder.PasswordEncoderClass;
-import encoder.SecureSaltRandom;
-
-import java.security.SecureRandom;
+import encoder.MyPasswordEncoder;
+import encoder.SaltSecureRandom;
 
 public class PasswordTester {
 
+    // TODO. 相同的密码 + 相同的Salt -> Hash加密成相同结果
     public static void main(String[] args) {
-        // 先生成一个Byte Salt随机数，用于Hash加密密码
-        SecureRandom secureRandom = new SecureRandom();
-        byte[] salt = new byte[16];
-        secureRandom.nextBytes(salt);
-        secureRandom.nextBytes(salt);
-        System.out.println(salt);
+        SaltSecureRandom saltSecureRandom = new SaltSecureRandom();
 
-        // TODO. 相同的密码 + 相同的Salt -> Hash加密成相同的结果
-        SecureSaltRandom secureSaltRandom1 = new SecureSaltRandom(salt);
-        PasswordEncoderClass encoderClass = new PasswordEncoderClass();
-        String encodedPassword = encoderClass.encodePasswordBCrypt("test123", secureRandom);
+        MyPasswordEncoder passwordEncoder = new MyPasswordEncoder();
+        String encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
         System.out.println(encodedPassword);
 
-        SecureSaltRandom secureSaltRandom2 = new SecureSaltRandom(salt);
-        encodedPassword = encoderClass.encodePasswordBCrypt("test123", secureRandom);
+        encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
+        System.out.println(encodedPassword);
+
+        encodedPassword = passwordEncoder.encodePasswordBCrypt("password123", saltSecureRandom);
         System.out.println(encodedPassword);
     }
 }

@@ -2,7 +2,6 @@ package pwd;
 
 import java.util.List;
 
-// Password Policy: 确保密码符合基本的安全要求
 // 约束该类型只在当前包路径下可访问，避免外部使用Policy
 class PasswordPolicy {
 
