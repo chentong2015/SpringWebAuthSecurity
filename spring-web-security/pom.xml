@@ -13,7 +13,7 @@
     <artifactId>spring-web-security</artifactId>
 
     <modules>
-        <module>spring-web-https-ssl</module>
+        <module>spring-web-project</module>
         <module>spring-web-security5</module>
         <module>spring-web-security6</module>
     </modules>

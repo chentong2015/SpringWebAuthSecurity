@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/spring-web-security/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web-projects/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web-https-ssl/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
