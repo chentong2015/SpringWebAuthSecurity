@@ -21,6 +21,7 @@ public class JwtTokenValidator {
         } catch (MalformedJwtException e) {
             System.out.println("Invalid JWT token: " + e.getMessage());
         } catch (ExpiredJwtException e) {
+            // 标明Token验证失败的错误类型
             System.out.println("JWT token is expired: " + e.getMessage());
         } catch (UnsupportedJwtException e) {
             System.out.println("JWT token is unsupported: " + e.getMessage());

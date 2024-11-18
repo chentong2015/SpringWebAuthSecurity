@@ -13,7 +13,8 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.Base64;
 
-// TODO. 定位Secret Key从何而来 ? 通过请求的Header头部信息获取Key
+// TODO. 定位Secret Key从何而来 ?
+//  通过请求的Header(JwsHeader, JweHeader)头部信息获取Key
 public class SignedKeyLocator implements Locator<Key> {
 
     @Override

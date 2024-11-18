@@ -31,7 +31,7 @@ public class JwtTokenProvider {
                 .verifyWith(SignedKey.getSigningKey())
                 .build()
                 .parseSignedClaims(jwtToken)
-                .getPayload()
+                .getPayload()  // TODO. 替换废弃的getBody()方法
                 .getSubject(); // TODO. 从Payload Claims中获取签名信息
     }
 }

@@ -24,10 +24,14 @@
             <version>0.12.6</version>
         </dependency>
 
+        <!-- TODO. 必须保证Runtime Classpath中包含以下依赖
+        Unable to load class named [io.jsonwebtoken.impl.DefaultJwtParser]
+        from the thread context, current, or system/application ClassLoaders. -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-impl</artifactId>
             <version>0.12.6</version>
+            <!-- The dependency is required at runtime, not need for compilation of project -->
             <scope>runtime</scope>
         </dependency>
 

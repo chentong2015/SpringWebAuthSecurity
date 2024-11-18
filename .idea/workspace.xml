@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/resources/token.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-project/src/main/java/spring/web/main/CrossOriginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-project/src/main/java/spring/web/main/CrossOriginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/java/com/example/https/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/java/com/example/https/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/java/com/example/https/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/controller/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/java/com/example/https/tsl/MyTlsConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/tsl/MyTlsConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/src/main/resources/springboot.p12" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-https-ssl/src/main/resources/springboot.p12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/target/classes/springboot.p12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-https-ssl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-session-cookie/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/config/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/config/WebSecurityConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApplication">
+  <component name="RunManager" selected="Application.JsonWebToken">
     <configuration name="JsonWebToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JsonWebToken" />
       <module name="auth-jwt-token" />
@@ -129,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonWebToken" />
         <item itemvalue="Application.MainApplication" />
         <item itemvalue="Application.PasswordTester" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.JsonWebToken" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731086164346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update web https module structure">
+      <created>1731264037943</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731264037943</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +215,8 @@
     <MESSAGE value="update auth password policy and validator" />
     <MESSAGE value="clean UI page html file" />
     <MESSAGE value="update salt bytes generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="update salt bytes generator" />
+    <MESSAGE value="update web https module structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="update web https module structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
