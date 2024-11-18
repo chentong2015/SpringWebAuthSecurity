@@ -18,6 +18,7 @@
     </properties>
 
     <dependencies>
+        <!-- 提供密码加密算法的实现类型 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>

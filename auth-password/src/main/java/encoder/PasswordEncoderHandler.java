@@ -8,7 +8,7 @@ import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import java.security.SecureRandom;
 
 // TODO. 对密码进行Hashing加密处理，避免被破解
-public class MyPasswordEncoder {
+public class PasswordEncoderHandler {
 
     // 1. BCrypt Password Encoder 在加密时通过SecureRandom生成随机Salt
     public String encodePasswordBCrypt(String plainPassword, SecureRandom secureRandom) {

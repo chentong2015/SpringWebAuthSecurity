@@ -1,4 +1,4 @@
-import encoder.MyPasswordEncoder;
+import encoder.PasswordEncoderHandler;
 import encoder.SaltSecureRandom;
 
 public class PasswordTester {
@@ -7,7 +7,7 @@ public class PasswordTester {
     public static void main(String[] args) {
         SaltSecureRandom saltSecureRandom = new SaltSecureRandom();
 
-        MyPasswordEncoder passwordEncoder = new MyPasswordEncoder();
+        PasswordEncoderHandler passwordEncoder = new PasswordEncoderHandler();
         String encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
         System.out.println(encodedPassword);
 
