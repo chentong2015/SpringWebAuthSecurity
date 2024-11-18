@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/resources/token.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWToken令牌.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-jwt-token/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-session-cookie/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/config/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/config/WebSecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/Secret Key Length.png" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/Secret Key Length.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +65,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\resources" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java\key" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java\openID" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java\key" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Application.JsonWebToken">
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731264037943</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update auth jwt token">
+      <created>1731928186183</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731928186183</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +217,8 @@
     <MESSAGE value="clean UI page html file" />
     <MESSAGE value="update salt bytes generator" />
     <MESSAGE value="update web https module structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="update web https module structure" />
+    <MESSAGE value="update auth jwt token" />
+    <option name="LAST_COMMIT_MESSAGE" value="update auth jwt token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,13 +18,14 @@
     </properties>
 
     <dependencies>
+        <!-- TODO. 注意JJWT和Java版本的兼容性 -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
             <version>0.12.6</version>
         </dependency>
 
-        <!-- TODO. 必须保证Runtime Classpath中包含以下依赖
+        <!-- TODO. 运行时依赖，保证Runtime Classpath包含以下依赖
         Unable to load class named [io.jsonwebtoken.impl.DefaultJwtParser]
         from the thread context, current, or system/application ClassLoaders. -->
         <dependency>

@@ -15,3 +15,5 @@ TODO. JWT Token持久化
 1. Session Token is standard for securing a stateless application
 2. Session Token采用后端签发，前端存储的解决方案
 3. Token单节点服务可存放在Session中，集群服务可存放在集群缓存中
+
+https://github.com/jwtk/jjwt
