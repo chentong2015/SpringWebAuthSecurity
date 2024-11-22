@@ -5,7 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/test/java/method/MethodAuthorizeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/test/java/method/MethodAuthorizeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-api/src/main/java/main/AuthSecurityUrlConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-api/src/main/java/main/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-api/src/main/java/main/AuthSecurityUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-project/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-project/src/main/java/spring/web/main/CrossOriginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-project/src/main/java/spring/web/main/CrossOriginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/DemoSecurityApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/config/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-api/src/main/java/main/properties/AuthUserProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/filter/CustomHeaderValidatorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/filter/CustomHeaderValidatorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/handler/UserAuthenticationErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/handler/UserAuthenticationErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java/com/example/security/handler/UserForbiddenErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/handler/UserForbiddenErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/src/test/java/com/example/security/SecurityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/test/java/controller/SecurityControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/DemoSecurityApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/config/AuthUserProperties$UserDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/config/AuthUserProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/config/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/controller/SecurityController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/filter/CustomHeaderValidatorFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/handler/UserAuthenticationErrorHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/classes/com/example/security/handler/UserForbiddenErrorHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security5/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/SpringWebSecurityApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/WebSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/config/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/WebSecurity6Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/java/org/example/methd/MethodAuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/methd/MethodAuthorizeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/src/test/java/method/MethodAuthorizeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/test/java/method/MethodAuthorizeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/SpringWebSecurityApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/config/WebSecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security/spring-web-security6/target/classes/org/example/controller/IndexController.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +104,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-project\src\main\resources" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\json-web-token" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-api\src\main\java\custom_api" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-session-cookie\src\main\resources" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login\src\main\resources\test" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login\src\main\resources" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="main" />
@@ -274,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732298035139</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refresh jwt token">
+      <created>1732298122195</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732298122195</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +351,7 @@
     <MESSAGE value="refresh project" />
     <MESSAGE value="update session cookie module" />
     <MESSAGE value="update auth web login API" />
-    <option name="LAST_COMMIT_MESSAGE" value="update auth web login API" />
+    <MESSAGE value="refresh jwt token" />
+    <option name="LAST_COMMIT_MESSAGE" value="refresh jwt token" />
   </component>
 </project>

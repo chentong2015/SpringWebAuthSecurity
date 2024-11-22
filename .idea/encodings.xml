@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/sample-web-security-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-https-ssl/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-https-ssl/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/auth-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/auth-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/sample-web-security-project/src/main/java" charset="UTF-8" />
@@ -23,6 +25,8 @@
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-password/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-session-cookie/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-session-cookie/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security/spring-web-project/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security/spring-web-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security/spring-web-security5/src/main/java" charset="UTF-8" />
@@ -31,6 +35,8 @@
     <file url="file://$PROJECT_DIR$/spring-web-security/spring-web-security6/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security5/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security5/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

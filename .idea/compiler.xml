@@ -10,18 +10,20 @@
         <module name="spring-web-https-ssl" />
         <module name="spring-web-project" />
         <module name="auth-webpage-session" />
-        <module name="spring-web-security5" />
         <module name="auth-password" />
-        <module name="spring-web-security6" />
         <module name="auth-jwt-token" />
+        <module name="spring-web-security-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auth-security" target="17" />
       <module name="sample-web-security-project" target="17" />
       <module name="spring-web-projects" target="17" />
+      <module name="spring-web-security" target="15" />
       <module name="spring-web-security-login" target="15" />
       <module name="spring-web-security-oauth2" target="15" />
+      <module name="spring-web-security5" target="15" />
+      <module name="spring-web-security6" target="17" />
       <module name="web-password" target="17" />
       <module name="web-session-cookie" target="17" />
     </bytecodeTargetLevel>

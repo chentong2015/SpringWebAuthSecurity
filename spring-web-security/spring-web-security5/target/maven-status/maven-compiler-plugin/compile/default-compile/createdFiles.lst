@@ -1,9 +1,0 @@
-com\example\security\config\SecurityConfiguration.class
-com\example\security\config\AuthUserProperties$UserDetail.class
-com\example\security\controller\SecurityController.class
-com\example\security\config\AuthUserProperties.class
-com\example\security\DemoSecurityApplication.class
-com\example\security\filter\CustomHeaderValidatorFilter.class
-com\example\security\handler\UserForbiddenErrorHandler.class
-META-INF\spring-configuration-metadata.json
-com\example\security\handler\UserAuthenticationErrorHandler.class
