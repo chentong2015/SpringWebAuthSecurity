@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true)
+@EnableMethodSecurity(prePostEnabled = true) // 配置方法调用层面的Auth授权
 public class WebSecurityConfiguration {
 
     // antMatchers在新版本中废弃使用

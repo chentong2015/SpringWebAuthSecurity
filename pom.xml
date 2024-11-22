@@ -11,10 +11,10 @@
     <modules>
         <module>auth-jwt-token</module>
         <module>auth-password</module>
-        <module>auth-web-session-cookie</module>
+        <module>auth-webpage-session</module>
         <module>spring-web-https-ssl</module>
         <module>spring-web-security</module>
-        <module>auth-web-login</module>
+        <module>auth-web-login-api</module>
     </modules>
 
     <properties>

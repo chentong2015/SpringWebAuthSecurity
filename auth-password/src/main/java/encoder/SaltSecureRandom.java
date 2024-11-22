@@ -16,11 +16,17 @@ public final class SaltSecureRandom extends SecureRandom {
 
     // 使用特定输入bytes作为Salt参与加密
     public SaltSecureRandom(byte[] bytesSalt) {
+
         this.bytesSalt = bytesSalt;
     }
 
     @Override
     public void nextBytes(byte[] bytes) {
+
         System.arraycopy(this.bytesSalt, 0, bytes, 0, this.bytesSalt.length);
+    }
+
+    public byte[] getBytesSalt() {
+        return bytesSalt;
     }
 }

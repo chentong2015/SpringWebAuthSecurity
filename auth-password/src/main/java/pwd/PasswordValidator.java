@@ -5,7 +5,7 @@ package pwd;
 // - 验证密码的更新合规
 public class PasswordValidator {
 
-    private PasswordPolicy passwordPolicy;
+    private final PasswordPolicy passwordPolicy;
 
     public PasswordValidator() {
         this.passwordPolicy = new PasswordPolicy();

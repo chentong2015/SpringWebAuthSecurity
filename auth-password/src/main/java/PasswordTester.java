@@ -1,6 +1,8 @@
 import encoder.PasswordEncoderHandler;
 import encoder.SaltSecureRandom;
 
+import java.util.Arrays;
+
 public class PasswordTester {
 
     // TODO. 相同的密码 + 相同的Salt -> Hash加密成相同结果
@@ -16,5 +18,7 @@ public class PasswordTester {
 
         encodedPassword = passwordEncoder.encodePasswordBCrypt("password123", saltSecureRandom);
         System.out.println(encodedPassword);
+
+        System.out.println(Arrays.toString(saltSecureRandom.getBytesSalt()));
     }
 }

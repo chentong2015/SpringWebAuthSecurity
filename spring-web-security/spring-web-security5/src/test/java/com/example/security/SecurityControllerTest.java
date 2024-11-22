@@ -20,9 +20,6 @@ class SecurityControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    // 使用Mock User来进行测试
-    // @WithMockUser(username = "user1", password = "test1", roles = {"user"})
-
     // 使用自定义的User Details来测试Endpoints
     @Test
     @WithUserDetails(value = "user1", userDetailsServiceBeanName = "userDetailsService")
