@@ -1,4 +1,4 @@
-package main.properties;
+package main.users;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

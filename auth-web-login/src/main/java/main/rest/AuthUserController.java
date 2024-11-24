@@ -1,4 +1,4 @@
-package main.api;
+package main.rest;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.MediaType;
