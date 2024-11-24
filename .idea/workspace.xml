@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/WebPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/Login Session 设计架构.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/WebSessionPageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/LoginSessionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/controller/AuthSessionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/controller/WebPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/model/JwtResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/model/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/model/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/denied.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/error.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login/src/main/java/main/api/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login/src/main/java/main/rest/AuthUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login/src/main/java/main/properties/AuthSecurityUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login/src/main/java/main/users/AuthSecurityUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login/src/main/java/main/properties/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login/src/main/java/main/users/AuthUserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login/src/test/用户角色测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login/src/test/用户角色测试.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ges" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -90,11 +73,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\frontend\controller" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\frontend" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login\src\test" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-password-project\src\main\java" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-project\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="main" />
@@ -317,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732388857825</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update web login session frontend web pages">
+      <created>1732468500571</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732468500571</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +339,8 @@
     <MESSAGE value="refresh jwt token" />
     <MESSAGE value="reset web security project" />
     <MESSAGE value="update auth web login session" />
-    <option name="LAST_COMMIT_MESSAGE" value="update auth web login session" />
+    <MESSAGE value="update web login session frontend web pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="update web login session frontend web pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
