@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="auth-password-template" />
         <module name="auth-web-login-session" />
+        <module name="auth-web-login-sample" />
         <module name="spring-web-https-ssl" />
         <module name="spring-web-project" />
         <module name="auth-password" />
         <module name="auth-jwt-token" />
         <module name="spring-web-security-project" />
-        <module name="auth-web-login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

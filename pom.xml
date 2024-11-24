@@ -12,7 +12,7 @@
     <modules>
         <module>auth-jwt-token</module>
         <module>auth-password</module>
-        <module>auth-web-login</module>
+        <module>auth-web-login-sample</module>
         <module>auth-web-login-session</module>
         <module>spring-web-https-ssl</module>
         <module>spring-web-project</module>

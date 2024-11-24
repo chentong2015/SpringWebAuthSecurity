@@ -10,8 +10,8 @@ Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=Use
    AccountNonLocked=true, Granted Authorities=[ROLE_USER]],
    Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
 Handler:
-    Type = main.rest.AuthUserController
-    Method = main.rest.AuthUserController#user(HttpServletRequest)
+    Type = main.controller.AuthUserController
+    Method = main.controller.AuthUserController#user(HttpServletRequest)
 Async:
     Async started = false
     Async result = null

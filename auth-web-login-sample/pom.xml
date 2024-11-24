@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>auth-web-login</artifactId>
+    <artifactId>auth-web-login-sample</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

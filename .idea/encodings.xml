@@ -7,10 +7,10 @@
     <file url="file://$PROJECT_DIR$/auth-password-template/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-password/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-password/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auth-web-login-sample/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auth-web-login-sample/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-web-login-session/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-web-login-session/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auth-web-login/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/auth-web-login/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-web-security-project/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sample-web-security-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-https-ssl/src/main/java" charset="UTF-8" />
