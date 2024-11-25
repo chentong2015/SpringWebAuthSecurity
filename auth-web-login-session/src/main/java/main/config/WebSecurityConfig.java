@@ -1,10 +1,10 @@
-package main.backend.config;
+package main.config;
 
 import main.backend.authentication.filter.TokenAuthenticationFilter;
 import main.backend.authentication.handler.AuthenticationEntryPointHandler;
 import main.backend.authentication.handler.AuthenticationFailureHandler;
 import main.backend.authentication.handler.AuthenticationSuccessHandler;
-import main.backend.config.handler.MyLogoutSuccessHandler;
+import main.config.handler.MyLogoutSuccessHandler;
 import main.backend.service.PersistenceUserDetailsService;
 import main.backend.session.CookieHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-public class BackendSecurityConfig {
+public class WebSecurityConfig {
 
     @Autowired
     private AuthenticationEntryPointHandler authEntryPointHandler;
@@ -58,6 +58,10 @@ public class BackendSecurityConfig {
                 .addFilterBefore(tokenAuthenticationFilter, BasicAuthenticationFilter.class)
                 // 配置需要认证的特定请求路径
                 .authorizeHttpRequests((requests) -> {
+                    // 针对前端Page路径的配置
+                    requests.requestMatchers("/login").permitAll();
+                    requests.requestMatchers("/register").permitAll();
+                    requests.requestMatchers("/public").permitAll();
                     requests.requestMatchers("/api/signup").permitAll();
                     requests.anyRequest().authenticated();
                 })
@@ -78,15 +82,14 @@ public class BackendSecurityConfig {
         return httpSecurity.build();
     }
 
-    // 设置AuthenticationManager, 使用特定的UserDetails + PasswordEncoder
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-        authenticationManagerBuilder
-                .userDetailsService(persistenceUserDetailsService)
-                .passwordEncoder(globalPasswordEncoder());
+    // 设置AuthenticationManager: 使用特定的UserDetails + PasswordEncoder
+    @Bean
+    public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+        AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
+        authenticationManagerBuilder.userDetailsService(persistenceUserDetailsService);
+        return authenticationManagerBuilder.build();
     }
 
-    // 针对密码的高级加密器, 提供SALT避免被破解
     @Bean
     public PasswordEncoder globalPasswordEncoder() {
         return new BCryptPasswordEncoder();

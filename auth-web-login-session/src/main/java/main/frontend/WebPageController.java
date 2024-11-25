@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class WebPageController {
 
     @GetMapping("/")
+    @PreAuthorize("permitAll()")
     public String home() {
         return "redirect:login";
     }
@@ -23,6 +24,11 @@ public class WebPageController {
         return "/register.html";
     }
 
+    @GetMapping("/public")
+    public String publicPage() {
+        return "public.html";
+    }
+
     @GetMapping("/user")
     @PreAuthorize("hasRole('USER')")
     public String user() {
@@ -33,11 +39,6 @@ public class WebPageController {
     @PreAuthorize("hasRole('ADMIN')")
     public String adminPage() {
         return "/admin.html";
-    }
-
-    @GetMapping("/public")
-    public String publicPage() {
-        return "public.html";
     }
 
     @GetMapping("/public-secure")

@@ -1,4 +1,4 @@
-package main.backend.config.filter;
+package main.config.filter;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
