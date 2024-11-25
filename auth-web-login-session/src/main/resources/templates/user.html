@@ -1,68 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<header>
+   <script type="text/javascript" src="js/script.js"></script>
+</header>
 <body>
-   <!-- ADMIN ROLE能够执行的操作 -->
    <h1>User Testing Page</h1>
+   <button type="button" onclick="showMeInfo()">Show Me</button>
+   <p></p>
+   <button type="button" onclick="whoamiInfo()">Whoami</button>
 
-   <button type="button" id="GetInformation">Get Information</button>
-   <p></p>
-   <button type="button" id="UpdatePassword">Update Password</button>
-   <p></p>
-   <button type="button" id="RefreshSession">Refresh User Session</button>
-   <p></p>
-   <button type="button" id="Logout">Log Out</button>
+   <br><br><br>
+   Old Password: <input name="oldPassword" id="oldPassword" type="text"/> <br><br>
+   New Password: <input name="newPassword" id="newPassword" type="text"/> <br><br>
+   <button type="button" id="UpdatePassword" onclick="updatePassword()">Update Password</button>
 
+   <br><br><br>
+   <button type="button" onclick="refreshSession()">Refresh Session</button>
+   <br><br>
+   <button type="button" id="Logout" onclick="logoutUser()">Log Out</button>
+
+   <br><br>
    <p>Visit Public Secure Web Page</p>
    <button type="button" onclick="window.location.href='/public-secure'">Public Space</button>
 </body>
-
-<script>
-   document.getElementById("GetInformation").addEventListener("click", function (e) {
-      console.log("click GetInformation btton");
-      fetch('http://localhost:8080/api/whoami',
-      {
-         method: 'GET',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)));
-   });
-
-   document.getElementById("UpdatePassword").addEventListener("click", function (e) {
-      console.log("click UpdatePassword button");
-      fetch('http://localhost:8080/api/changePassword',
-      {
-         method: 'POST',
-         headers: {
-            'Content-Type': 'application/json; charset=utf-8'
-         },
-         body: JSON.stringify({"oldPassword": "tong", "password": "tong123"})
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)))
-   });
-
-   document.getElementById("RefreshSession").addEventListener("click", function (e) {
-      console.log("click RefreshSession button");
-      fetch('http://localhost:8080/api/refresh',
-      {
-         method: 'GET',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)))
-   });
-
-   document.getElementById("Logout").addEventListener("click", function (e) {
-      console.log("click Logout button");
-
-      fetch('http://localhost:8080/api/logout',
-      {
-         method: 'POST',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)));
-
-      // 登出后跳转到登录页面
-      window.location.href="http://localhost:8080/login";
-   });
-</script>
 </html>

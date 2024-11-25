@@ -1,61 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<header>
+   <script type="text/javascript" src="js/script.js"></script>
+</header>
 <body>
-   <!-- ADMIN ROLE能够执行的操作 -->
    <h1>Admin Testing Page</h1>
 
-   <button type="button" id="GetUser">Get User By Id</button>
-   <p></p>
-   <button type="button" id="GetAllUsers">Get All Users</button>
-   <p></p>
-   <button type="button" id="RefreshSession">Refresh User Session</button>
-   <p></p>
-   <button type="button" id="Logout">Log Out</button>
+   User ID: <input name="userId" id="userId" type="text"/>
+   <button type="button" id="GetUser" onclick="getUserById()">Get User By Id</button>
+
+   <br><br>
+   <button type="button" onclick="getAllUsers()">Get All Users</button>
+
+   <br><br>
+   <button type="button" onclick="refreshSession()">Refresh Session</button>
+   <br><br>
+   <button type="button" id="Logout" onclick="logoutUser()">Log Out</button>
 </body>
-
-<script>
-   document.getElementById("GetUser").addEventListener("click", function (e) {
-      console.log("click GetUser btton");
-      fetch('http://localhost:8080/api/user/1',
-      {
-         method: 'GET',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)));
-   });
-
-   document.getElementById("GetAllUsers").addEventListener("click", function (e) {
-      console.log("click GetAllUsers button");
-      fetch('http://localhost:8080/api/user/all',
-      {
-         method: 'POST',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)))
-   });
-
-   document.getElementById("RefreshSession").addEventListener("click", function (e) {
-      console.log("click RefreshSession button");
-      fetch('http://localhost:8080/api/refresh',
-      {
-         method: 'GET',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)))
-   });
-
-   document.getElementById("Logout").addEventListener("click", function (e) {
-      console.log("click Logout button");
-
-      fetch('http://localhost:8080/api/logout',
-      {
-         method: 'POST',
-      })
-      .then(response => response.json())
-      .then(response => alert(JSON.stringify(response)));
-
-      // 登出后跳转到登录页面
-      window.location.href="http://localhost:8080/login";
-   });
-</script>
 </html>

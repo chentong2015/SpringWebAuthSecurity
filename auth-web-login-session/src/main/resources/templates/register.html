@@ -1,60 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+   <header>
+      <script type="text/javascript" src="js/script.js"></script>
+   </header>
    <body>
       <h1>Register Web Page</h1>
-
-      <!-- 用户选择注册不同ROLE角色权限的账户 -->
-      <button id="LoginUser" >Login User</button>
-      <p></p>
-      <button id="LoginAdmin">Login Admin</button>
-
-      <p>Go Back Login Page</p>
-      <button type="button" onclick="window.location.href='/login'">Login</button>
+      <div>
+         User ID: <input name="userId" id="userId" type="text"/> <br><br>
+         Username: <input name="username" id="username" type="text"/> <br><br>
+         Password: <input name="password" id="password" type="password"/> <br><br>
+         Fist Name: <input name="firstname" id="firstname" type="text"/> <br><br>
+         Last Name: <input name="lastname" id="lastname" type="text"/> <br><br>
+      </div>
+      <button id="RegisterUser" onclick="registerUser()">Register Account</button>
+      
+      <br><br>
+      <button type="button" onclick="window.location.href='/login'">Back Login</button>
    </body>
-
-   <script>
-      document.getElementById("LoginUser").addEventListener("click", function (e) {
-         console.log("click LoginUser button");
-         fetch('http://localhost:8080/api/register',
-         {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json; charset=utf-8'
-            },
-            body: JSON.stringify({
-               "id": "1",
-               "username": "tong",
-               "password": "tong",
-               "firstname": "first name",
-               "lastname": "last name"
-            })
-         })
-         .then(response => response.json())
-         .then(response => alert(JSON.stringify(response)))
-
-         window.location.href="http://localhost:8080/login";
-      });
-
-      document.getElementById("LoginUser").addEventListener("click", function (e) {
-         console.log("click LoginUser button");
-         fetch('http://localhost:8080/api/register',
-         {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json; charset=utf-8'
-            },
-            body: JSON.stringify({
-               "id": "1",
-               "username": "admin",
-               "password": "admin",
-               "firstname": "first name admin",
-               "lastname": "last name admin"
-            })
-         })
-         .then(response => response.json())
-         .then(response => alert(JSON.stringify(response)))
-
-         window.location.href="http://localhost:8080/login";
-      });
-   </script>
 </html>

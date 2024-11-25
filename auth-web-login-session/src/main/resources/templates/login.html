@@ -1,43 +1,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+   <header>
+      <script type="text/javascript" src="js/script.js"></script>
+   </header>
    <body>
       <h1>Login Page</h1>
-      <button id="LoginUser" >Login User</button>
-      <p></p>
-      <button id="LoginAdmin" >Login Admin</button>
-
-      <p>Please sign up if you don't have an account !</p>
-      <button type="button" onclick="window.location.href='/register'">Register Account</button>
-
-      <p>Visit Public Web Page</p>
-      <button type="button" onclick="window.location.href='/public'">Public Space</button>
+      <div>
+         Username: <input name="username" id="username" type="text"/> <br><br>
+         Password: <input name="password" id="password" type="password"/> <br><br>
+         <button id="LoginUser" onclick="loginUser()">Login Account</button>
+     </div>
+      <br>
+      Create an account <button type="button" onclick="window.location.href='/register'">Register Account</button>
+      <br> <br>
+      Visit Public Page <button type="button" onclick="window.location.href='/public'">Public Space</button>
    </body>
-
-   <script>
-      document.getElementById("LoginUser").addEventListener("click", function (e) {
-         console.log("click LoginUser button");
-         fetch('http://localhost:8080/api/login?username=tong&password=tong',
-         {
-            method: 'POST',
-         })
-         .then(response => response.json())
-         .then(response => alert(JSON.stringify(response)))
-
-         // 登录成功后跳转到普通User用户页面
-         window.location.href="http://localhost:8080/user";
-      });
-
-      document.getElementById("LoginAdmin").addEventListener("click", function (e) {
-         console.log("click LoginAdmin button");
-         fetch('http://localhost:8080/api/login?username=admin&password=admin',
-         {
-            method: 'POST',
-         })
-         .then(response => response.json())
-         .then(response => alert(JSON.stringify(response)))
-
-         // 登录成功后跳转到普通Admin用户页面
-         window.location.href="http://localhost:8080/admin";
-      });
-   </script>
 </html>

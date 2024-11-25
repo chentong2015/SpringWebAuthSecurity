@@ -5,33 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/TimeHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/database/数据表设计架构.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/BackendSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ControllerAdviceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ResourceConflictException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/RoleName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/entity/RoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/CookieHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionTokenState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/openID/OpenID Token.png" beforeDir="false" afterPath="$PROJECT_DIR$/auth-jwt-token/openID-token/OpenID Token.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/FrontendSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732476522130</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="create auth login session backend">
+      <created>1732536985225</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732536985225</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +375,8 @@
     <MESSAGE value="update web login session frontend web pages" />
     <MESSAGE value="update web login session module" />
     <MESSAGE value="update web login session: add sqlite database" />
-    <option name="LAST_COMMIT_MESSAGE" value="update web login session: add sqlite database" />
+    <MESSAGE value="create auth login session backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="create auth login session backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

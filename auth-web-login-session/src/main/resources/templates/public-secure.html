@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+   <header>
+      <script type="text/javascript" src="js/script.js"></script>
+   </header>
    <body>
       <h1>Public Testing Page</h1>
-      <p> This is all public information</p>
-      <p> This is all public information</p>
+      <h4> This is public secure information</h4>
+      <h4> This is public secure information</h4>
 
-      <!-- 用户在登录后所访问到的公开页面内容，可以选择登出 -->
-      <button type="button" id="Logout">Log Out</button>
+      <button type="button" id="Logout" onclick="logoutUser()">Log Out</button>
 
-      <p>Go back to you Account Space !</p>
-      <button type="button" onclick="window.location.href='/user'">Account Space</button>
+      <br><br>
+      Back to you Account Space: <button type="button" onclick="window.location.href='/user'">Account Space</button>
    </body>
-
-   <script>
-     document.getElementById("Logout").addEventListener("click", function (e) {
-        console.log("click Logout button");
-
-        fetch('http://localhost:8080/api/logout',
-        {
-           method: 'POST',
-        })
-        .then(response => response.json())
-        .then(response => alert(JSON.stringify(response)));
-
-        // 登出后跳转到普通公开页面
-        window.location.href="http://localhost:8080/public";
-     });
    </script>
 </html>
