@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/EmptyBasedAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/TokenBasedAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/filter/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationEntryPointHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/filter/RequestPathFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/handler/MyLogoutSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/PasswordChanger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/BackendSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/BackendSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/PersistenceUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/CookieHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/CookieHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/FrontendSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/FrontendSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/WebPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/WebPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/WebSecurity6Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/WebSecurity6Configuration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +79,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ToolWindowRun.ShowToolbar": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Work/Work My Projects/Java Spring Master/SpringWebAuthSecurity/auth-web-login-session/src/main/java/main/backend",
+    "last_opened_file_path": "C:/Work/Work My Projects/Java Spring Master/SpringWebAuthSecurity/auth-web-login-session/src/main/java/main/backend/authentication/handler",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\authentication\handler" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources\database" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\database" />
@@ -93,11 +103,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.backend.service" />
+      <recent name="main.backend.authentication.filter" />
+      <recent name="main.backend.authentication" />
       <recent name="main.backend.session" />
       <recent name="jwt" />
-      <recent name="main.backend.model" />
-      <recent name="custom" />
-      <recent name="model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.LoginSessionApplication">
@@ -340,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732536985225</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update auth login session web pages">
+      <created>1732544235746</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732544235746</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,7 +393,8 @@
     <MESSAGE value="update web login session module" />
     <MESSAGE value="update web login session: add sqlite database" />
     <MESSAGE value="create auth login session backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="create auth login session backend" />
+    <MESSAGE value="update auth login session web pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="update auth login session web pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

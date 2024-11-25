@@ -16,7 +16,12 @@ public class FrontendSecurityConfig {
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> {
-                    requests.requestMatchers("/*").permitAll();
+                    requests.requestMatchers("/login").permitAll();
+                    requests.requestMatchers("/register").permitAll();
+                    requests.requestMatchers("/public").permitAll();
+                    requests.requestMatchers("/user").authenticated();
+                    requests.requestMatchers("/admin").authenticated();
+                    requests.requestMatchers("/public-secure").authenticated();
                 });
         return httpSecurity.build();
     }

@@ -19,12 +19,12 @@ public class WebSecurity6Configuration {
         System.out.println("Inject bean FilterChain");
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((requests) -> {
                     requests.requestMatchers("/token/get-token").permitAll();
                     requests.requestMatchers("/health").permitAll();
                     requests.anyRequest().authenticated();
-                })
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                });
         return httpSecurity.build();
     }
 }

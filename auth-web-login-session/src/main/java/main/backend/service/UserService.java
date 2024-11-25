@@ -1,5 +1,6 @@
 package main.backend.service;
 
+import main.backend.model.PasswordChanger;
 import main.backend.model.RoleName;
 import main.backend.model.UserRequest;
 import main.backend.model.entity.RoleEntity;
@@ -8,6 +9,8 @@ import main.backend.repository.RoleRepository;
 import main.backend.repository.UserRepository;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -44,6 +47,23 @@ public class UserService {
         user.setAuthorities(authorities);
 
         return this.userRepository.save(user);
+    }
+
+    // TODO. 必须验证提供的Old密码是当前用户密码才能修改 !!
+    public void changePassword(PasswordChanger passwordChanger) {
+        Authentication currentUser = SecurityContextHolder.getContext().getAuthentication();
+        String username = currentUser.getName();
+        String userPassword = (String) currentUser.getCredentials();
+        String oldPassword = passwordChanger.getOldPassword();
+
+        UserEntity userEntity = this.userRepository.findByUsername(username).orElse(null);
+        if (userEntity == null) {
+            throw new UsernameNotFoundException("No user found");
+        }
+
+        String newPasswordEncoded = globalPasswordEncoder.encode(passwordChanger.getNewPassword());
+        userEntity.setPassword(newPasswordEncoded);
+        this.userRepository.save(userEntity);
     }
 
     // 必须要User Role角色才能查看用户数据

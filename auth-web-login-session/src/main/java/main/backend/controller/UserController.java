@@ -1,5 +1,6 @@
 package main.backend.controller;
 
+import main.backend.model.PasswordChanger;
 import main.backend.model.entity.UserEntity;
 import main.backend.service.UserService;
 import org.springframework.http.MediaType;
@@ -21,24 +22,17 @@ public class UserController {
         this.userService = userService;
     }
 
-    // Update Password
-    // @RequestMapping(value = "/changePassword", method = RequestMethod.POST)
-    // @PreAuthorize("hasRole('USER')")
-    // public ResponseEntity<?> changePassword(@RequestBody PasswordChanger passwordChanger) throws Exception {
-    //     userDetailsService.changePassword(passwordChanger.oldPassword, passwordChanger.newPassword);
-    //     Map<String, String> result = new HashMap<>();
-    //     result.put("result", "success");
-    //     return ResponseEntity.accepted().body(result);
-    // }
+    @PostMapping("/changePassword")
+    @PreAuthorize("hasRole('USER')")
+    public ResponseEntity<?> changePassword(@RequestBody PasswordChanger passwordChanger) {
+        this.userService.changePassword(passwordChanger);
 
-    // static class PasswordChanger {
-    //     public String oldPassword;
-    //     public String newPassword;
-    // }
+        Map<String, String> result = new HashMap<>();
+        result.put("result", "success");
+        return ResponseEntity.accepted().body(result);
+    }
 
-
-    // 从Context中获取认证过的UserDetails
-    // Make sure user has role "ROLE_USER" to access this endpoint.
+    // 确保具有"ROLE_USER", 从ContextHolder中获取认证过的UserDetails
     @GetMapping("/whoami")
     @PreAuthorize("hasRole('USER')")
     public UserEntity user() {

@@ -47,4 +47,8 @@ public class CookieHandler {
 
         response.addCookie(authCookie);
     }
+
+    public static String getAuthCookieName() {
+        return AUTH_COOKIE_NAME;
+    }
 }

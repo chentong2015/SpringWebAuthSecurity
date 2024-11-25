@@ -24,13 +24,13 @@ public class WebPageController {
     }
 
     @GetMapping("/user")
-    // @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('USER')")
     public String user() {
         return "user.html";
     }
 
     @GetMapping("/admin")
-    // @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String adminPage() {
         return "/admin.html";
     }
@@ -41,7 +41,7 @@ public class WebPageController {
     }
 
     @GetMapping("/public-secure")
-    // @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('USER')")
     public String publicSecurePage() {
         return "public-secure.html";
     }
