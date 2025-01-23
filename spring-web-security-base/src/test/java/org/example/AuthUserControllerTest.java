@@ -1,3 +1,5 @@
+package org.example;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -17,50 +19,58 @@ public class AuthUserControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    // 无需用户认证便可以登录
     @Test
-    // @WithMockUser 无需用户认证便可以登录
+    // @WithMockUser
     void testHomePermitAll() throws Exception {
         mockMvc.perform(get("/home"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
 
+    // 默认角色为ROLE_USER
     @Test
-    @WithMockUser // 默认角色为ROLE_USER
+    @WithMockUser(roles = {"USER"})
     void testUserAccess() throws Exception {
         mockMvc.perform(get("/user"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
 
-    @Test // 没有用户，测试认证失败 => 403 禁止访问
-    void testUserAccess_AuthenticationFailed() throws Exception {
-        mockMvc.perform(get("/user"))
-                .andDo(print())
-                .andExpect(status().isForbidden());
-    }
-
+    // 用户角色不匹配 => 403 禁止操作
     @Test
-    @WithAnonymousUser // 用户角色不够 => 403 禁止操作
-    void testUserAccess_AuthorizationFailed() throws Exception {
-        mockMvc.perform(get("/user"))
-                .andDo(print())
-                .andExpect(status().isForbidden());
-    }
-
-    @Test
-    @WithMockUser // 用户角色不匹配 => 403 禁止操作
+    @WithMockUser
     void testAdminAccess() throws Exception {
         mockMvc.perform(get("/admin"))
                 .andDo(print())
                 .andExpect(status().isForbidden());
     }
 
-    @Test // 满足特定条件的访问
+    // 满足特定条件的访问
+    @Test
     @WithMockUser(roles = {"ADMIN"})
     void testAdminAccessOK() throws Exception {
         mockMvc.perform(get("/admin"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
+
+    // 没有用户，测试认证失败 => 403 禁止访问
+    @Test
+    void testUserAccess_AuthenticationFailed() throws Exception {
+        mockMvc.perform(get("/user"))
+                .andDo(print())
+                .andExpect(status().isForbidden());
+    }
+
+    // 用户角色不够 => 403 禁止操作
+    @Test
+    @WithAnonymousUser
+    void testUserAccess_AuthorizationFailed() throws Exception {
+        mockMvc.perform(get("/user"))
+                .andDo(print())
+                .andExpect(status().isForbidden());
+    }
+
+
 }

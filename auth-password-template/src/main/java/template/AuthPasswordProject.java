@@ -1,12 +1,12 @@
-package main;
+package template;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebLoginApiApplication {
+public class AuthPasswordProject {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebLoginApiApplication.class, args);
+        SpringApplication.run(AuthPasswordProject.class, args);
     }
 }

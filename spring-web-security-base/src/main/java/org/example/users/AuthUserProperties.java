@@ -1,4 +1,4 @@
-package main.users;
+package org.example.users;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.security.core.userdetails.User;
@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-// 通过属性配置文件来加载所有User配置信息, 提供所有被认证的用户
+// TODO. 属性配置文件来加载所有User配置信息
 @ConfigurationProperties(prefix = "auth")
 public class AuthUserProperties {
 

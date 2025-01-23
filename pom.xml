@@ -12,7 +12,7 @@
     <modules>
         <module>auth-password</module>
         <module>auth-password-template</module>
-        <module>spring-web-login-sample</module>
+        <module>spring-web-security-base</module>
         <module>spring-web-security-project</module>
         <module>web-https-ssl</module>
     </modules>
@@ -23,14 +23,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- 为其它子模块提供公用的依赖模块 -->
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.example</groupId>
-                <artifactId>auth-jwt-token</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
             <dependency>
                 <groupId>org.example</groupId>
                 <artifactId>auth-password</artifactId>

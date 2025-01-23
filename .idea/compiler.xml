@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="auth-password-template" />
-        <module name="spring-web-login-sample" />
         <module name="web-https-ssl" />
+        <module name="spring-web-security-base" />
         <module name="auth-password" />
         <module name="spring-web-security-project" />
       </profile>

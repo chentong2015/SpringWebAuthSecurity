@@ -1,4 +1,4 @@
-package main.users;
+package org.example.users;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -13,7 +13,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableConfigurationProperties({AuthUserProperties.class})
-public class AuthSecurityUserConfig {
+public class SecurityUserConfig {
 
     @Autowired
     private AuthUserProperties props;
@@ -30,10 +30,9 @@ public class AuthSecurityUserConfig {
         return authenticationManagerBuilder.build();
     }
 
-    // TODO. 静态注入: 通过properties属性配置文件注入用户信息
+    // TODO. 静态注入属性配置文件中的用户信息，初始化认证用户
     @Bean
     public UserDetailsService userDetailsService() {
-        // 直接静态注入用户的信息
         // PasswordEncoder encoder = new BCryptPasswordEncoder();
         // UserDetails user = User.withUsername("User1")
         //         .password(encoder.encode("password1"))

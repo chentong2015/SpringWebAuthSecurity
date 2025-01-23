@@ -1,4 +1,4 @@
-package custom.model;
+package template.model;
 
 public enum UserRole {
 

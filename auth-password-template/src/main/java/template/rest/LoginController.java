@@ -1,7 +1,7 @@
-package custom.rest;
+package template.rest;
 
-import custom.model.UserRequest;
-import custom.repository.UserRepoManager;
+import template.model.UserRequest;
+import template.repository.UserRepoManager;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

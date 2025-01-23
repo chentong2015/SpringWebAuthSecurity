@@ -1,4 +1,4 @@
-package main.controller;
+package org.example.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.MediaType;
@@ -13,21 +13,19 @@ public class AuthUserController {
     @GetMapping(value = "/home", produces = MediaType.APPLICATION_JSON_VALUE)
     @PreAuthorize("permitAll()")
     public ResponseEntity<String> home() {
-
         return ResponseEntity.ok("Dashboard Home page");
     }
 
     @GetMapping(value = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
-    @PreAuthorize("isAuthenticated() && hasRole('USER')")
+    // @PreAuthorize("isAuthenticated()")
     public ResponseEntity<String> user(HttpServletRequest request) {
         System.out.println(request.getAuthType());
         return ResponseEntity.ok("User Home page");
     }
 
     @GetMapping(value = "/admin", produces = MediaType.APPLICATION_JSON_VALUE)
-    @PreAuthorize("hasRole('ADMIN')")
+    // @PreAuthorize("isAuthenticated() && hasRole('ADMIN')")
     public ResponseEntity<String> admin() {
-
         return ResponseEntity.ok("ADMIN Home page");
     }
 }

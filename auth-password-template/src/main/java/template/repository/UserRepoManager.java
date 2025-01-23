@@ -1,6 +1,6 @@
-package custom.repository;
+package template.repository;
 
-import custom.model.UserRequest;
+import template.model.UserRequest;
 import encoder.HashingPasswordEncoder;
 import encoder.SaltSecureRandom;
 import org.springframework.security.core.userdetails.User;

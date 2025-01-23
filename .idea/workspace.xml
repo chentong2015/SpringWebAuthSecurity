@@ -8,93 +8,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/1. Token令牌生成.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/2. JWT验证流程.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/3. JWT授权模型.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWT Bearer 生成.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/json-web-token/JWT Token 令牌.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/openID-token/OpenID Token.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/JsonWebToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/JwtTokenValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/jwt/TimeHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/Secret Key Length.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SignedKeyLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/java/key/SigningKeyResolver.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-jwt-token/src/main/resources/token.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/repository/UserRepoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/repository/UserRepoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/注册登录API.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/PasswordTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/PasswordTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/encoder/PasswordEncoderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/encoder/EncoderConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/encoder/PasswordEncoderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/encoder/HashingPasswordEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/pwd/PasswordPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/policy/PasswordPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/pwd/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/policy/PasswordValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/java/main/AuthSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/AuthSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/java/main/WebLoginApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/WebLoginApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/java/main/controller/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/controller/AuthUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/java/main/users/AuthSecurityUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthSecurityUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/java/main/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthUserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/test/java/main/AuthUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/test/java/main/AuthUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-sample/src/test/用户角色测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-login-sample/src/test/用户角色测试.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/Login Session 设计架构.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/database/session.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/database/数据表设计架构.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/LoginSessionApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/EmptyBasedAuthentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/TokenBasedAuthentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/filter/TokenAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationEntryPointHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationFailureHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/authentication/handler/AuthenticationSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ControllerAdviceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ExceptionResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/exception/ResourceConflictException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/PasswordChanger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/RoleName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/entity/RoleEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/model/entity/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/PersistenceUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/CookieHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/backend/session/SessionTokenState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/DataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/filter/RequestPathFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/config/handler/MyLogoutSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/java/main/frontend/WebPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public-secure.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/public.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-web-login-session/src/main/resources/templates/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/repository/UserRepoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/repository/UserRepoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/controller/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/java/com/example/https/tsl/MyTlsConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/tsl/MyTlsConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-https-ssl/src/main/resources/springboot.p12" beforeDir="false" afterPath="$PROJECT_DIR$/web-https-ssl/src/main/resources/springboot.p12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-project/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-project/src/main/java/spring/web/main/CrossOriginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/AuthSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/WebLoginApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/WebLoginApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/controller/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/controller/AuthUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthSecurityUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/SecurityUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/AuthUserProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/test/java/AuthUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/test/java/org/example/AuthUserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/test/用户角色测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/test/用户角色测试.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,8 +99,9 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="main" />
+      <recent name="org.example" />
       <recent name="" />
+      <recent name="main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main.backend.service" />
@@ -180,33 +111,26 @@
       <recent name="jwt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PasswordTester">
-    <configuration name="LoginSessionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.LoginSessionApplication" />
-      <module name="auth-web-login-session" />
+  <component name="RunManager" selected="Application.WebLoginApiApplication">
+    <configuration name="AuthPasswordProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="template.AuthPasswordProject" />
+      <module name="auth-password-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PasswordTester" />
-      <module name="auth-password" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WebLoginApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.WebLoginApiApplication" />
-      <module name="spring-web-login-sample" />
+      <option name="MAIN_CLASS_NAME" value="org.example.WebLoginApiApplication" />
+      <module name="spring-web-security-base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.users.*" />
+          <option name="PATTERN" value="org.example.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,33 +138,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthUserControllerTest.testUserAccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-login-sample" />
+    <configuration name="AuthUserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-web-security-base" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AuthUserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthUserControllerTest.testAdminAccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-web-security-base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AuthUserControllerTest" />
-      <option name="METHOD_NAME" value="testUserAccess" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AuthUserControllerTest" />
+      <option name="METHOD_NAME" value="testAdminAccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthUserControllerTest.testUserAccess_AuthenticationFailed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-login-sample" />
+    <configuration name="AuthUserControllerTest.testAdminAccessOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-web-security-base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AuthUserControllerTest" />
-      <option name="METHOD_NAME" value="testUserAccess_AuthenticationFailed" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AuthUserControllerTest" />
+      <option name="METHOD_NAME" value="testAdminAccessOK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PasswordTester" />
-        <item itemvalue="Application.LoginSessionApplication" />
         <item itemvalue="Application.WebLoginApiApplication" />
-        <item itemvalue="JUnit.AuthUserControllerTest.testUserAccess" />
-        <item itemvalue="JUnit.AuthUserControllerTest.testUserAccess_AuthenticationFailed" />
+        <item itemvalue="JUnit.AuthUserControllerTest.testAdminAccess" />
+        <item itemvalue="JUnit.AuthUserControllerTest.testAdminAccessOK" />
+        <item itemvalue="JUnit.AuthUserControllerTest" />
+        <item itemvalue="Application.AuthPasswordProject" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732555455648</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="clean auth user session module">
+      <created>1737643951070</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737643951070</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,17 +412,7 @@
     <MESSAGE value="update auth login session web pages" />
     <MESSAGE value="update auth login session - finish authentication" />
     <MESSAGE value="update auth login session - finish project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update auth login session - finish project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-login-sample/src/test/java/main/AuthUserControllerTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="clean auth user session module" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean auth user session module" />
   </component>
 </project>
