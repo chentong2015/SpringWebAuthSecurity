@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/RequestPathFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/AuthPasswordProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/repository/UserRepoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/repository/UserRepoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/custom/rest/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/AuthSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/WebLoginApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/WebLoginApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/controller/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/controller/AuthUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthSecurityUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/SecurityUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/java/main/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/AuthUserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/test/java/AuthUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/test/java/org/example/AuthUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-login-sample/src/test/用户角色测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-base/src/test/用户角色测试.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1737643951070</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refresh spring web security base">
+      <created>1737646143983</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737646143983</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clean project and create new modules" />
     <MESSAGE value="update jwt token module" />
     <MESSAGE value="update auth jwt token example" />
     <MESSAGE value="update auth password and web login" />
@@ -413,6 +401,7 @@
     <MESSAGE value="update auth login session - finish authentication" />
     <MESSAGE value="update auth login session - finish project" />
     <MESSAGE value="clean auth user session module" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean auth user session module" />
+    <MESSAGE value="refresh spring web security base" />
+    <option name="LAST_COMMIT_MESSAGE" value="refresh spring web security base" />
   </component>
 </project>
