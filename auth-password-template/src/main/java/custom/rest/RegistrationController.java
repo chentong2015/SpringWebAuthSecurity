@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import pwd.PasswordValidator;
+import policy.PasswordValidator;
 
 @RestController
 public class RegistrationController {
@@ -21,6 +21,7 @@ public class RegistrationController {
         this.passwordValidator = new PasswordValidator();
     }
 
+    // 注册时: 验证密码的有效性，生成Hash加密的密码
     @PostMapping(value = "/signup", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> signup(@RequestBody UserRequest userRequest) {
         boolean validPwd = this.passwordValidator.validatePasswordCreation(userRequest.getUsername(), userRequest.getPassword());

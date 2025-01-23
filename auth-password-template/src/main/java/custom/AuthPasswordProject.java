@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AuthPasswordProject {
 
     public static void main(String[] args) {
-
         SpringApplication.run(AuthPasswordProject.class, args);
     }
 }

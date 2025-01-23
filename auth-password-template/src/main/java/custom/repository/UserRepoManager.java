@@ -1,7 +1,7 @@
 package custom.repository;
 
 import custom.model.UserRequest;
-import encoder.PasswordEncoderHandler;
+import encoder.HashingPasswordEncoder;
 import encoder.SaltSecureRandom;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,22 +14,22 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class UserRepoManager {
 
-    private final SaltSecureRandom saltRandom;
-    private final PasswordEncoderHandler encoderHandler;
+    // 保证Hash加密的Salt一致
+    private final SaltSecureRandom saltRandom = new SaltSecureRandom();
+    private final HashingPasswordEncoder passwordEncoder;
     private final Map<String, UserDetails> userDetailsMap;
 
     public UserRepoManager() {
         this.userDetailsMap = new ConcurrentHashMap<>();
-        this.saltRandom = new SaltSecureRandom();
-        this.encoderHandler = new PasswordEncoderHandler();
+        this.passwordEncoder = new HashingPasswordEncoder();
     }
 
-    // 持久化存储指定的用户(带Role角色授权)
+    // TODO. 持久化存储指定的用户(带Role角色授权)
     public boolean persistUser(UserRequest userRequest) {
         if (isFoundUser(userRequest)) {
             return false;
         }
-        String encodePassword = this.encoderHandler.encodePasswordBCrypt(userRequest.getPassword(), saltRandom);
+        String encodePassword = this.passwordEncoder.encodePasswordBCrypt(userRequest.getPassword(), saltRandom);
         UserDetails newUser = User.withUsername(userRequest.getUsername())
                 .password(encodePassword)
                 .roles(userRequest.getRole().name())
@@ -38,12 +38,12 @@ public class UserRepoManager {
         return true;
     }
 
-    // TODO. 必须保证使用同样的加密方式来验证Password
+    // TODO. 使用同样的加密方式来验证Password
     public boolean authenticateUser(UserRequest userRequest) {
         if (!isFoundUser(userRequest)) {
            return false;
         }
-        String encodePassword = this.encoderHandler.encodePasswordBCrypt(userRequest.getPassword(), saltRandom);
+        String encodePassword = this.passwordEncoder.encodePasswordBCrypt(userRequest.getPassword(), saltRandom);
         UserDetails userDetails = this.userDetailsMap.get(userRequest.getUsername());
         return userDetails.getPassword().equals(encodePassword);
     }

@@ -10,14 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>auth-jwt-token</module>
         <module>auth-password</module>
-        <module>auth-web-login-sample</module>
-        <module>auth-web-login-session</module>
-        <module>spring-web-https-ssl</module>
-        <module>spring-web-project</module>
-        <module>spring-web-security-project</module>
         <module>auth-password-template</module>
+        <module>spring-web-login-sample</module>
+        <module>spring-web-security-project</module>
+        <module>web-https-ssl</module>
     </modules>
 
     <properties>

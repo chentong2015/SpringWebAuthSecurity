@@ -1,18 +1,19 @@
-import encoder.PasswordEncoderHandler;
+import encoder.HashingPasswordEncoder;
 import encoder.SaltSecureRandom;
 
 import java.util.Arrays;
 
 public class PasswordTester {
 
-    // TODO. 相同的密码 + 相同的Salt -> Hash加密成相同结果
+    // TODO. 相同密码 + 相同Salt -> Hash加密成相同结果
     public static void main(String[] args) {
         SaltSecureRandom saltSecureRandom = new SaltSecureRandom();
 
-        PasswordEncoderHandler passwordEncoder = new PasswordEncoderHandler();
+        HashingPasswordEncoder passwordEncoder = new HashingPasswordEncoder();
         String encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
         System.out.println(encodedPassword);
 
+        // 单向加密用于验证原始密码是否一致
         encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
         System.out.println(encodedPassword);
 

@@ -17,6 +17,7 @@ public class LoginController {
         this.userService = userService;
     }
 
+    // 登录时: 验证用户名称 + 对比Hash生成的密码
     @PostMapping(value = "/signin", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> signin(@RequestBody UserRequest userRequest) {
         boolean loginResult = this.userService.authenticateUser(userRequest);
