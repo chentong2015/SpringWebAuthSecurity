@@ -1,31 +1,30 @@
 package org.example.controller;
 
-import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.http.MediaType;
+import org.example.users.UserRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
-@RestController
 public class AuthUserController {
 
-    @GetMapping(value = "/home", produces = MediaType.APPLICATION_JSON_VALUE)
-    @PreAuthorize("permitAll()")
-    public ResponseEntity<String> home() {
-        return ResponseEntity.ok("Dashboard Home page");
-    }
+    @Autowired
+    AuthenticationManager authenticationManager;
 
-    @GetMapping(value = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
-    // @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<String> user(HttpServletRequest request) {
-        System.out.println(request.getAuthType());
-        return ResponseEntity.ok("User Home page");
-    }
+    // TODO. 通过认证器Manager完成基于User+Password的认证，完成后共享到SecurityContext
+    @PostMapping("/login")
+    public ResponseEntity<?> loginUser(@RequestBody UserRequest userRequest) {
+        String username = userRequest.getUsername();
+        String password = userRequest.getPassword();
 
-    @GetMapping(value = "/admin", produces = MediaType.APPLICATION_JSON_VALUE)
-    // @PreAuthorize("isAuthenticated() && hasRole('ADMIN')")
-    public ResponseEntity<String> admin() {
-        return ResponseEntity.ok("ADMIN Home page");
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(username, password));
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        return ResponseEntity.ok().body("Created Success");
     }
 }

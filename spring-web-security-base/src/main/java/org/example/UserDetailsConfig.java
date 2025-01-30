@@ -1,5 +1,6 @@
-package org.example.users;
+package org.example;
 
+import org.example.users.AuthUserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +14,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableConfigurationProperties({AuthUserProperties.class})
-public class SecurityUserConfig {
+public class UserDetailsConfig {
 
     @Autowired
     private AuthUserProperties props;
