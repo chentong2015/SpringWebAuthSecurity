@@ -1,6 +1,0 @@
-TODO. 三种登录表单: 可以同时提供不同的选项
-.httpBasic()   使用页面弹窗登陆
-.fromLogin()   使用Login页面表单 => 可自定义表单页面
-.oauth2Login() 使用第三方身份进行认证和登录
-
-https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/input.html
