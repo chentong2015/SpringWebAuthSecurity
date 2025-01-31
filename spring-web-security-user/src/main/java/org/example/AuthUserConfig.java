@@ -8,7 +8,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -32,14 +36,27 @@ public class AuthUserConfig {
     }
 
     // TODO. 静态注入属性配置文件中的用户信息，初始化认证用户
-    @Bean
-    public UserDetailsService userDetailsService() {
-        // PasswordEncoder encoder = new BCryptPasswordEncoder();
-        // UserDetails user = User.withUsername("User1")
-        //         .password(encoder.encode("password1"))
-        //         .roles("USER")
-        //         .build();
-
+    // @Bean
+    public UserDetailsService userDetailsServiceStatic() {
         return new InMemoryUserDetailsManager(props.getUserDetails());
+    }
+
+    @Bean
+    public InMemoryUserDetailsManager userDetailsService() {
+        UserDetails user = User.withUsername("user1")
+                .password(passwordEncoder().encode("user1Pass"))
+                .roles("USER")
+                .build();
+        UserDetails admin = User.builder()
+                .username("admin")
+                .password(passwordEncoder().encode("password"))
+                .roles("USER", "ADMIN")
+                .build();
+        return new InMemoryUserDetailsManager(user, admin);
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }

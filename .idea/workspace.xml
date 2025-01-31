@@ -5,58 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/HttpBasicLoginApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/表单登录/1. httpbasic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/表单登录/2. form login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/表单登录/3. oauth2 login.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/表单登录/Security 表单登录.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAuthFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAuthSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/HttpBasicLoginApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/CustomAuthSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Processing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources/template/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/OAuth2 Login.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/OAuth2ClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/SpringSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/provider/AuthenticAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/provider/PreAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/provider/UsernamePasswordAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/service/AuthenticAccountDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/service/OAuthClientDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/token/CustomJWTAccessTokenConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/token/CustomJWTTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/encoder/EncoderConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-password/src/main/java/EncoderConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/UserDetailsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/WebLoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/WebLoginApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/controller/AuthRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/AuthRequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/controller/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/AuthUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/users/AuthUserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/java/org/example/users/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/users/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/test/java/org/example/AuthUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/AuthUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-base/src/test/用户角色测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/用户角色测试.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/WebSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/WebSecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/controller/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/filter/CustomHeaderValidatorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/filter/CustomHeaderValidatorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/handler/UserAuthenticationErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/UserAuthenticationErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/handler/UserForbiddenErrorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/java/org/example/methd/MethodAuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/methd/MethodAuthorizeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/test/java/controller/SecurityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/test/java/controller/SecurityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-project/src/test/java/method/MethodAuthorizeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/test/java/method/MethodAuthorizeServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/MainApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/java/com/example/https/tsl/MyTlsConfigurer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-https-ssl/src/main/resources/springboot.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthUserConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,24 +93,24 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ToolWindowRun.ShowToolbar": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/chent5/OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc/Desktop/untitled",
+    "last_opened_file_path": "C:/Work/Work My Projects/Java Spring Master/SpringWebAuthSecurity/spring-web-security-login/form-login/src/main/java/org/example",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java\org\example" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\authentication\handler" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\表单登录" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-jwt-token\src\main\java" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\database" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\resources\database" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\oauth2-login\src\main\java\org\example" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\oauth2-login\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\oauth2-login\src\main" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\oauth2-login\src\main\resources" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java\org\example\config" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -141,11 +118,11 @@
       <recent name="main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.config" />
       <recent name="main.backend.service" />
       <recent name="main.backend.authentication.filter" />
       <recent name="main.backend.authentication" />
       <recent name="main.backend.session" />
-      <recent name="jwt" />
     </key>
   </component>
   <component name="RunManager" selected="Application.HttpBasicLoginApplication">
@@ -431,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738258609855</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update login http basic and handler">
+      <created>1738344885902</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1738344885902</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update jwt token module" />
     <MESSAGE value="update auth jwt token example" />
     <MESSAGE value="update auth password and web login" />
     <MESSAGE value="update auth password policy and validator" />
@@ -471,7 +454,8 @@
     <MESSAGE value="clean auth user session module" />
     <MESSAGE value="refresh spring web security base" />
     <MESSAGE value="refresh project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh project" />
+    <MESSAGE value="update login http basic and handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="update login http basic and handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
