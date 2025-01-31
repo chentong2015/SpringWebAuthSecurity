@@ -12,9 +12,9 @@
     <modules>
         <module>auth-password</module>
         <module>auth-password-template</module>
-        <module>spring-web-security-base</module>
-        <module>spring-web-security-project</module>
-        <module>web-https-ssl</module>
+        <module>spring-web-security-login</module>
+        <module>spring-web-security-user</module>
+        <module>spring-web-security-working</module>
     </modules>
 
     <properties>

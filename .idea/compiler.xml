@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="auth-password-template" />
-        <module name="web-https-ssl" />
-        <module name="spring-web-security-base" />
+        <module name="oauth2-login" />
+        <module name="spring-web-security-working" />
+        <module name="form-login" />
         <module name="auth-password" />
-        <module name="spring-web-security-project" />
+        <module name="spring-web-security-user" />
+        <module name="http-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,10 +23,10 @@
       <module name="spring-web-project" target="17" />
       <module name="spring-web-projects" target="17" />
       <module name="spring-web-security" target="15" />
-      <module name="spring-web-security-login" target="15" />
       <module name="spring-web-security-oauth2" target="15" />
       <module name="spring-web-security5" target="15" />
       <module name="spring-web-security6" target="17" />
+      <module name="web-https-ssl" target="15" />
       <module name="web-password" target="17" />
       <module name="web-session-cookie" target="17" />
     </bytecodeTargetLevel>
