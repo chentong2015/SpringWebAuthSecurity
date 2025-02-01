@@ -1,4 +1,4 @@
-package org.example;
+package org.example.config;
 
 import org.example.users.AuthUserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +41,8 @@ public class AuthUserConfig {
         return new InMemoryUserDetailsManager(props.getUserDetails());
     }
 
+    // 将UserDetails数据存储在内存中，用于测试账号登录
+    // UserDetails的密码必须使用特定加密器进行加密后存储
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails user = User.withUsername("user1")

@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>auth-password</module>
-        <module>auth-password-template</module>
+        <module>password-encoder</module>
+        <module>password-encoder-rest-api</module>
         <module>spring-web-security-login</module>
         <module>spring-web-security-user</module>
         <module>spring-web-security-working</module>
@@ -27,7 +27,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.example</groupId>
-                <artifactId>auth-password</artifactId>
+                <artifactId>password-encoder</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>

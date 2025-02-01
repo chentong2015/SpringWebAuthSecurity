@@ -12,7 +12,8 @@
       <!-- 推出登录后的定向链接/login?logout=true -->
       <div th:if="${param.logout}">You have been logged out.</div>
 
-      <form th:action="@{/login}" method="post">
+      <!-- 使用自动自定义processing api处理用户认证请求, 发送POST请求后跳转 -->
+      <form method="post" th:action="@{/login_process}">
           <div>
               <input type="text" name="username" placeholder="Username"/>
           </div>

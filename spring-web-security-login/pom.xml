@@ -15,7 +15,6 @@
     <modules>
         <module>form-login</module>
         <module>http-basic</module>
-        <module>oauth2-login</module>
     </modules>
 
     <properties>

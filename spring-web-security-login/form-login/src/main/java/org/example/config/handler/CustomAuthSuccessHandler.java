@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example.config.handler;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -23,5 +23,8 @@ public class CustomAuthSuccessHandler implements AuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
         System.out.println(userDetails);
+
+        // 定义跳转的页面链接
+        response.sendRedirect("/home");
     }
 }

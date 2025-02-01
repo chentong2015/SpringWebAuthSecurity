@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth-password-template" />
-        <module name="oauth2-login" />
+        <module name="password-encoder-rest-api" />
         <module name="spring-web-security-working" />
         <module name="form-login" />
-        <module name="auth-password" />
         <module name="spring-web-security-user" />
         <module name="http-basic" />
+        <module name="password-encoder" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auth-jwt-token" target="17" />
       <module name="auth-security" target="17" />
       <module name="auth-web-login-session" target="17" />
+      <module name="oauth2-login" target="17" />
       <module name="sample-web-security-project" target="17" />
       <module name="spring-web-project" target="17" />
       <module name="spring-web-projects" target="17" />
