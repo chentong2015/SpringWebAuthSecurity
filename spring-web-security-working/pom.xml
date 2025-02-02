@@ -36,13 +36,6 @@
             <version>3.3.5</version>
         </dependency>
 
-        <!-- 依赖spring-security-oauth2-core和spring-security-oauth2-jose -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
-            <version>3.3.5</version>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
