@@ -5,51 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/FormLogin默认表单.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthHandlerSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthUserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomLogoutSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/PublicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/Httpbasic默认表单.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/PublicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/用户认证的有效性.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户认证.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/AuthPasswordConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/AuthPasswordProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/AuthPasswordProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/model/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/repository/UserRepoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/repository/UserRepoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password-template/src/main/java/template/rest/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/EncoderConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/EncoderConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/PasswordTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/PasswordTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/encoder/HashingPasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/encoder/HashingPasswordEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/encoder/SaltSecureRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/encoder/SaltSecureRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/policy/PasswordPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/policy/PasswordPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-password/src/main/java/policy/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/policy/PasswordValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/FormLogin 表单.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/HttpBasicLoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/HttpFormLoginApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/CustomAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Config.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Forward.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Form Login Processing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources/template/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/Httpbasic 表单.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/FormLogin默认表单.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login 默认表单.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthHandlerSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthHandlerSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/Login Processing.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login Processing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/Httpbasic默认表单.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/Httpbasic默认表单.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/AuthUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/用户认证的有效性.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户认证有效性.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-working/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,17 +69,17 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Work My Projects/Java Spring Master/SpringWebAuthSecurity/spring-web-security-login/form-login/src/main/resources/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/chent5/OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc/Desktop/hogwarts-artifacts-online-main",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\resources\templates" />
@@ -122,11 +89,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\http-basic\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java\org\example\config" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example\config" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\http-basic\src\main" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -449,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738348640003</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="complete form login demo">
+      <created>1738433767052</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1738433767052</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update auth password and web login" />
     <MESSAGE value="update auth password policy and validator" />
     <MESSAGE value="clean UI page html file" />
     <MESSAGE value="update salt bytes generator" />
@@ -489,7 +462,8 @@
     <MESSAGE value="update login http basic and handler" />
     <MESSAGE value="update form login module" />
     <MESSAGE value="refresh project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh project" />
+    <MESSAGE value="complete form login demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete form login demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -503,6 +477,11 @@
           <url>file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomLogoutSuccessHandler.java</url>
           <line>14</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/config/AuthSecurityConfig.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

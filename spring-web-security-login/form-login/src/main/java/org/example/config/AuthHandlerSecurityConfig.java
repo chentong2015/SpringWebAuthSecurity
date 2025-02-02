@@ -20,7 +20,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class AuthHandlerSecurityConfig {
 
-    // TODO. 使用Handler来完成页面的跳转, 不能和自动跳转链接同时使用
+    // TODO. 使用Handler来完成页面的跳转(替代自动跳转链接)
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors(AbstractHttpConfigurer::disable)
