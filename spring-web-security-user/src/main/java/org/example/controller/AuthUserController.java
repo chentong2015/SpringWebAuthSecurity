@@ -1,8 +1,8 @@
 package org.example.controller;
 
 import org.example.users.UserRequest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -12,17 +12,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 public class AuthUserController {
 
-    @Autowired
     AuthenticationManager authenticationManager;
 
-    // TODO. 通过认证器Manager完成基于User+Password的认证，完成后共享到SecurityContext
+    public AuthUserController(AuthenticationManager authenticationManager) {
+        this.authenticationManager = authenticationManager;
+    }
+
+    // TODO. 使用AuthenticationManager进行用户名和密码的验证，验证后添加到SecurityContext
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody UserRequest userRequest) {
         String username = userRequest.getUsername();
         String password = userRequest.getPassword();
 
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(username, password));
+        AbstractAuthenticationToken usernamePasswordAuthToken = new UsernamePasswordAuthenticationToken(username, password);
+        Authentication authentication = authenticationManager.authenticate(usernamePasswordAuthToken);
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         return ResponseEntity.ok().body("Created Success");
