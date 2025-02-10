@@ -28,6 +28,7 @@ public class AuthUserConfig {
         return new UsernamePasswordAuthenticationFilter(authenticationManager(http));
     }
 
+    // TODO. AuthenticationManager: 用于验证特定的UserDetails用户信息
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
         AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);

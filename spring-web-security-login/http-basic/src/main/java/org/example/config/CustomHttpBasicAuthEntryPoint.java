@@ -14,6 +14,7 @@ public class CustomHttpBasicAuthEntryPoint implements AuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+        response.addHeader("WWW-Authenticate", "Basic");
         response.addHeader("WWW-Authenticate", "Basic realm=\"Realm\"");
 
         // response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage());
