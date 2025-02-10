@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +26,7 @@ public class AuthSecurityConfig {
             requests.requestMatchers("/login").permitAll();
             requests.anyRequest().authenticated();
         }).httpBasic(Customizer.withDefaults())
-                .csrf(AbstractHttpConfigurer::disable);;
+          .csrf(AbstractHttpConfigurer::disable);
         return http.build();
     }
 

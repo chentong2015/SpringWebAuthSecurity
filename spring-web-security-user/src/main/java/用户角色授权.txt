@@ -1,0 +1,7 @@
+TODO. 授予的权限用户判断有用户是否具有特定的访问权
+Collection<? extends GrantedAuthority> grantedAuthorities = authentication.getAuthorities();
+- .hasAnyAuthority("Authority_NAME")
+- .hasRole("ROLE_NAME")
+
+@EnableMethodSecurity
+- @PreAuthorize("hasRole('ADMIN')")

@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户认证Auth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户角色授权.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/AuthUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthHandlerSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738520060795</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update spring web security user">
+      <created>1738693471817</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1738693471817</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update auth password policy and validator" />
     <MESSAGE value="clean UI page html file" />
     <MESSAGE value="update salt bytes generator" />
     <MESSAGE value="update web https module structure" />
@@ -468,7 +478,8 @@
     <MESSAGE value="update form login module" />
     <MESSAGE value="complete form login demo" />
     <MESSAGE value="refresh project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh project" />
+    <MESSAGE value="update spring web security user" />
+    <option name="LAST_COMMIT_MESSAGE" value="update spring web security user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

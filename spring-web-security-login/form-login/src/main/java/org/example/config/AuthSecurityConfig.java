@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 // @EnableWebSecurity
 public class AuthSecurityConfig {
 
-    // TODO. 自定义自动跳转的页面url链接
+    // TODO. 定义Login成功或失败后自动跳转页面url链接
     // @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors(AbstractHttpConfigurer::disable)
