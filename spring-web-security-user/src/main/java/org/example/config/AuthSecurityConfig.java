@@ -1,5 +1,7 @@
 package org.example.config;
 
+import org.example.config.filter.JwtAuthenticationFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -7,21 +9,26 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity
+@EnableMethodSecurity // 激活在方法层面的权限授权配置
 public class AuthSecurityConfig {
 
-    // TODO. 设置URL访问的安全权限，确保用户的认证和授权
+    @Autowired
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
+                .addFilterBefore(jwtAuthenticationFilter, BasicAuthenticationFilter.class)
                 .authorizeHttpRequests((requests) -> {
                     requests.requestMatchers("/home").permitAll();
-                    requests.requestMatchers("/admin").authenticated();
+                    requests.requestMatchers("/user").hasRole("USER");
                     requests.requestMatchers("/admin").hasRole("ADMIN");
+                    requests.requestMatchers("/limit").denyAll();
                     requests.anyRequest().authenticated();
                 });
         return httpSecurity.build();

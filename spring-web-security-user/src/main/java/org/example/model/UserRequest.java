@@ -1,4 +1,4 @@
-package org.example.users;
+package org.example.model;
 
 public class UserRequest {
 

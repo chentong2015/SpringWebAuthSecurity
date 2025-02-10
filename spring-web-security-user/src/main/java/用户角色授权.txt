@@ -1,7 +1,10 @@
 TODO. 授予的权限用户判断有用户是否具有特定的访问权
 Collection<? extends GrantedAuthority> grantedAuthorities = authentication.getAuthorities();
-- .hasAnyAuthority("Authority_NAME")
-- .hasRole("ROLE_NAME")
 
-@EnableMethodSecurity
-- @PreAuthorize("hasRole('ADMIN')")
+- .hasAnyAuthority("Authority_NAME") 授权名称READ, WRITE等操作
+
+- .hasRole("ROLE_NAME") 方法会自动在角色名称签名添加ROLE_前缀
+
+- @PreAuthorize("hasRole('ADMIN')") 配置在方法层面的角色授权
+
+https://docs.spring.io/spring-security/reference/servlet/configuration/java.html

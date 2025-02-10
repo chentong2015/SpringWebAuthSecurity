@@ -71,6 +71,4 @@ public class AuthUserControllerTest {
                 .andDo(print())
                 .andExpect(status().isForbidden());
     }
-
-
 }

@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebLoginApplication {
+public class SpringWebSecurityApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebLoginApplication.class, args);
+        SpringApplication.run(SpringWebSecurityApplication.class, args);
     }
 }

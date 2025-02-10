@@ -1,8 +1,5 @@
 package org.example.config;
 
-import org.example.users.AuthUserProperties;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -10,36 +7,21 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-@EnableConfigurationProperties({AuthUserProperties.class})
 public class AuthUserConfig {
-
-    @Autowired
-    private AuthUserProperties props;
-
-    @Bean
-    public UsernamePasswordAuthenticationFilter usernamePasswordAuthenticationFilter(HttpSecurity http) throws Exception {
-        return new UsernamePasswordAuthenticationFilter(authenticationManager(http));
-    }
 
     // TODO. AuthenticationManager: 用于验证特定的UserDetails用户信息
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-        AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.userDetailsService(userDetailsService());
+        AuthenticationManagerBuilder authenticationManagerBuilder =
+                http.getSharedObject(AuthenticationManagerBuilder.class);
+        authenticationManagerBuilder.userDetailsService(userDetailsService())
+                .passwordEncoder(passwordEncoder());
         return authenticationManagerBuilder.build();
-    }
-
-    // TODO. 静态注入属性配置文件中的用户信息，初始化认证用户
-    // @Bean
-    public UserDetailsService userDetailsServiceStatic() {
-        return new InMemoryUserDetailsManager(props.getUserDetails());
     }
 
     // 将UserDetails数据存储在内存中，用于测试账号登录
@@ -47,12 +29,12 @@ public class AuthUserConfig {
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails user = User.withUsername("user1")
-                .password(passwordEncoder().encode("user1Pass"))
+                .password(passwordEncoder().encode("user1"))
                 .roles("USER")
                 .build();
         UserDetails admin = User.builder()
                 .username("admin")
-                .password(passwordEncoder().encode("password"))
+                .password(passwordEncoder().encode("admin"))
                 .roles("USER", "ADMIN")
                 .build();
         return new InMemoryUserDetailsManager(user, admin);

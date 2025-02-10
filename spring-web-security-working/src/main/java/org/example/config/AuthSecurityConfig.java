@@ -18,10 +18,8 @@ public class AuthSecurityConfig {
         System.out.println("Inject bean FilterChain");
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
-
                 // 配置JSESSIONID HttpSession的创建策略
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-
                 .authorizeHttpRequests((requests) -> {
                     requests.requestMatchers("/token/get-token").permitAll();
                     requests.requestMatchers("/health").permitAll();

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AuthRequestController {
+public class UserController {
 
     @GetMapping(value = "/home", produces = MediaType.APPLICATION_JSON_VALUE)
     @PreAuthorize("permitAll()")
