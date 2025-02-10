@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户角色授权.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/Httpbasic Postman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/CustomHttpBasicAuthEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/service/DBUserDetailsPasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/service/UserDetails Services.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/完整配置.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthHandlerSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login 默认表单.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login Web Form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/Httpbasic默认表单.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/Httpbasic Web.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/HttpBasicLoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/HttpBasicLoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +91,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\http-basic\src\main\java" />
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java\org\example\config" />
     </key>
@@ -96,11 +102,11 @@
       <recent name="main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.repository" />
+      <recent name="org.example" />
       <recent name="org.example.config" />
       <recent name="main.backend.service" />
       <recent name="main.backend.authentication.filter" />
-      <recent name="main.backend.authentication" />
-      <recent name="main.backend.session" />
     </key>
   </component>
   <component name="RunManager" selected="Application.HttpBasicLoginApplication">
@@ -439,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738693471817</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="update spring web security user">
+      <created>1739186178547</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1739186178547</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,8 +507,18 @@
           <line>14</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java/org/example/config/CustomHttpBasicAuthEntryPoint.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((HeaderWriterResponse)response).response" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterResponse" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
