@@ -23,12 +23,19 @@ public class SecurityController {
     @GetMapping("/test3")
     @PreAuthorize("isAuthenticated() && hasRole('USER')")
     public String test3() {
-        return "test 2: isAuthenticated()";
+        return "test 2: isAuthenticated() && hasRole('USER')";
     }
 
     @GetMapping("/test4")
     @PreAuthorize("isAuthenticated() && hasRole('ADMIN')")
     public String test4() {
-        return "test 4: isAuthenticated()";
+        return "test 4: isAuthenticated() && hasRole('ADMIN')";
+    }
+
+    // 不存在特定的能够方法API的角色
+    @GetMapping("/test5")
+    @PreAuthorize("isAuthenticated() && hasRole('MASTER')")
+    public String test5() {
+        return "test 5: isAuthenticated() && hasRole('MASTER')";
     }
 }

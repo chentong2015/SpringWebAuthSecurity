@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/static/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/filter/JwtAuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/SecurityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户密码认证.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,11 +90,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\resources\static" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example\config" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\http-basic\src\main" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\http-basic\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -470,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739211050236</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update spring web security user">
+      <created>1739379282813</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1739379282813</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -530,10 +540,21 @@
           <line>16</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/filter/JwtAuthenticationFilter.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest" memberName="request" />
         <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="authorities" />
       </pinned-members>
     </pin-to-top-manager>

@@ -5,14 +5,22 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
+import org.springframework.security.authentication.ott.OneTimeTokenAuthenticationToken;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -31,12 +39,34 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
         }
 
-        // TODO. 创建默认能够被认证成功的AuthenticationToken对象, 调用方法super.setAuthenticated(true);
-        UsernamePasswordAuthenticationToken authenticationDefault =
-                new UsernamePasswordAuthenticationToken("DefaultUser", null, null);
-        authenticationDefault.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-        SecurityContextHolder.getContext().setAuthentication(authenticationDefault);
-
+        Authentication authentication = buildAuthentication(request);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
         filterChain.doFilter(request, response);
+    }
+
+    private Authentication buildAuthentication(HttpServletRequest request) {
+        AbstractAuthenticationToken authentication;
+        String pathUrl = request.getRequestURL().toString();
+        if (pathUrl.endsWith("/test2")) {
+            // 需要认证成功，不需要ROLE
+            authentication = new PreAuthenticatedAuthenticationToken("userEntity", null, null);
+        } else if (pathUrl.endsWith("/test3")) {
+            // 需要ROLE USER
+            List<GrantedAuthority> authorities = new ArrayList<>();
+            authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+            authentication = new PreAuthenticatedAuthenticationToken("userEntity", null, authorities);
+        } else if (pathUrl.endsWith("/test4")) {
+            // 需要ROLE ADMIN
+            List<GrantedAuthority> authorities = new ArrayList<>();
+            authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+            authentication = new PreAuthenticatedAuthenticationToken("userEntity", null, authorities);
+        } else {
+            // 默认创建认证成功的Authentication对象，但是不赋予角色
+            // 如果访问带有ROLE要求的API，则403 Forbidden Error
+            authentication = new OneTimeTokenAuthenticationToken(null, new ArrayList<>());
+        }
+
+        authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+        return authentication;
     }
 }

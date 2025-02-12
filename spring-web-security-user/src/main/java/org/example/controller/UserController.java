@@ -11,19 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @GetMapping(value = "/home", produces = MediaType.APPLICATION_JSON_VALUE)
-    @PreAuthorize("permitAll()")
+    @GetMapping(value = "/home")
     public ResponseEntity<String> home() {
         return ResponseEntity.ok("Dashboard Home page");
     }
 
-    @GetMapping(value = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/user")
     public ResponseEntity<String> user(HttpServletRequest request) {
         System.out.println(request.getAuthType());
         return ResponseEntity.ok("User Home page");
     }
 
-    @GetMapping(value = "/admin", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/admin")
     public ResponseEntity<String> admin() {
         return ResponseEntity.ok("ADMIN Home page");
     }

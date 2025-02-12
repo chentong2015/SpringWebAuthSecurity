@@ -27,6 +27,7 @@ public class AuthSecurityConfig {
                 .addFilterBefore(jwtAuthenticationFilter, BasicAuthenticationFilter.class)
                 .authorizeHttpRequests((requests) -> {
                     requests.requestMatchers("/home").permitAll();
+                    requests.requestMatchers("/login").permitAll();
                     requests.requestMatchers("/user").hasRole("USER");
                     requests.requestMatchers("/admin").hasRole("ADMIN");
                     requests.requestMatchers("/limit").denyAll();
