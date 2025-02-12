@@ -26,7 +26,7 @@ public class LoginController {
         String username = userRequest.getUsername();
         String password = userRequest.getPassword();
 
-        // 使用配置的AuthenticationManager完成认证
+        // 使用配置的AuthenticationManager完成认证, 认证会失败
         AbstractAuthenticationToken usernamePasswordAuthToken = new UsernamePasswordAuthenticationToken(username, password);
         Authentication authentication = authenticationManager.authenticate(usernamePasswordAuthToken);
 

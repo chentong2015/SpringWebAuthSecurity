@@ -17,12 +17,12 @@ import java.io.IOException;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
+    // 配置文件设置是否需要Token验证
     @Value("${security.enabled:#{true}}")
     private boolean securityEnabled;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        // 验证Token数据的有效性
         if (securityEnabled) {
             String header = request.getHeader("Authorization");
             if (header == null) {
@@ -31,8 +31,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
         }
 
-        // TODO. 创建一个默认的能够被认证成功的AuthenticationToken对象
-        // 创建对象时调用父类的方法super.setAuthenticated(true);
+        // TODO. 创建默认能够被认证成功的AuthenticationToken对象, 调用方法super.setAuthenticated(true);
         UsernamePasswordAuthenticationToken authenticationDefault =
                 new UsernamePasswordAuthenticationToken("DefaultUser", null, null);
         authenticationDefault.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
