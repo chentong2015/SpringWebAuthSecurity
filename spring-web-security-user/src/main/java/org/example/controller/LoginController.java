@@ -20,13 +20,12 @@ public class LoginController {
         this.authenticationManager = authenticationManager;
     }
 
-    // TODO. 使用AuthenticationManager进行用户名和密码的验证，验证后添加到SecurityContext
+    // TODO. 创建用于AuthenticationManager认证的Authentication对象(认证通过与否)
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody UserRequest userRequest) {
         String username = userRequest.getUsername();
         String password = userRequest.getPassword();
 
-        // 使用配置的AuthenticationManager完成认证, 认证会失败
         AbstractAuthenticationToken usernamePasswordAuthToken = new UsernamePasswordAuthenticationToken(username, password);
         Authentication authentication = authenticationManager.authenticate(usernamePasswordAuthToken);
 

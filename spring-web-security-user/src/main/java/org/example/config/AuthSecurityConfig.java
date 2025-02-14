@@ -13,13 +13,13 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity // 激活在方法层面的权限授权配置
+@EnableMethodSecurity // 1. 激活在方法层面的权限授权配置
 public class AuthSecurityConfig {
 
     @Autowired
     private JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    // 设置在SecurityFilter过滤层面的权限配置
+    // 2. 设置在SecurityFilter过滤层面的权限配置
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.cors(AbstractHttpConfigurer::disable)
@@ -33,6 +33,7 @@ public class AuthSecurityConfig {
                     requests.requestMatchers("/limit").denyAll();
                     requests.anyRequest().authenticated();
                 });
+        // 没有提供Form Login表单, 需要请求后端Endpoint来完成登录
         return httpSecurity.build();
     }
 }
