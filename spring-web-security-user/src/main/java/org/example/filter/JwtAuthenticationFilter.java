@@ -1,4 +1,4 @@
-package org.example.config.filter;
+package org.example.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -28,6 +28,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Value("${security.enabled:#{true}}")
     private boolean securityEnabled;
 
+    @Value("${security.testing:#{false}}")
+    private boolean forSecurityTest;
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         if (securityEnabled) {
@@ -36,6 +39,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 request.setAttribute("TokenError", "Request is missing Authorization Bearer Token.");
                 throw new AuthenticationCredentialsNotFoundException("Not Found Bearer Token.");
             }
+        }
+        // 针对测试情况不做任何Authentication定制化
+        if (forSecurityTest) {
+            filterChain.doFilter(request, response);
+            return;
         }
 
         Authentication authentication = buildAuthentication(request);

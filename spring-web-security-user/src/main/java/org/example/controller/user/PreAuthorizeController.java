@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.example.controller.user;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 // TODO. 使用注解的方式配置认证和权限
 @RestController
-public class SecurityController {
+public class PreAuthorizeController {
 
     @GetMapping("/test1")
     @PreAuthorize("permitAll()")

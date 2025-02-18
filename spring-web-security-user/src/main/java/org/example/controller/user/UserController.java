@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.example.controller.user;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.MediaType;
@@ -11,19 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @GetMapping(value = "/home")
-    public ResponseEntity<String> home() {
-        return ResponseEntity.ok("Dashboard Home page");
-    }
-
     @GetMapping(value = "/user")
+    @PreAuthorize("isAuthenticated() && hasRole('USER')")
     public ResponseEntity<String> user(HttpServletRequest request) {
         System.out.println(request.getAuthType());
         return ResponseEntity.ok("User Home page");
     }
 
     @GetMapping(value = "/admin")
+    @PreAuthorize("isAuthenticated() && hasRole('ADMIN')")
     public ResponseEntity<String> admin() {
+        System.out.println("admin endpoints");
         return ResponseEntity.ok("ADMIN Home page");
     }
 }

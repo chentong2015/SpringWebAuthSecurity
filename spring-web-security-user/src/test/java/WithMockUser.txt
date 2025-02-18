@@ -1,0 +1,17 @@
+TODO. @WithMockUser 默认用户名,密码和授权角色
+Run as a user with the username "user", the password "password", and the roles "ROLE_USER".
+- The user with a username of user does not have to exist, since we mock the user object.
+- The Authentication that is populated in the SecurityContext is of type UsernamePasswordAuthenticationToken.
+- The principal on the Authentication is Spring Security’s User object.
+- The User has a username of user.
+- The User has a password of password.
+- A single GrantedAuthority named ROLE_USER is used.
+
+TODO. 默认使用UsernamePasswordAuthenticationToken进行认证
+ 创建Authentication对象中包含完整的UserDetails数据和Granted Authorities授权
+Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl
+   [Authentication=UsernamePasswordAuthenticationToken
+   [Principal=org.springframework.security.core.userdetails.User
+   [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true,
+   AccountNonLocked=true, Granted Authorities=[ROLE_USER]],
+   Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
