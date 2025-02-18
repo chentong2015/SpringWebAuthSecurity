@@ -26,11 +26,21 @@ public class UserDetailsControllerTest {
     // hasRole("USER") 使用自定义UserDetails用户测试
     @Test
     @WithUserDetails(value = "user1")
-    void testUserDetailsWithName() throws Exception {
+    void testUserDetailsWithUser() throws Exception {
         mockMvc.perform(get("/user"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string("User Home page"));
+    }
+
+    // hasRole("ADMIN") 使用自定义UserDetails用户测试
+    @Test
+    @WithUserDetails(value = "admin")
+    void testUserDetailsWithAdmin() throws Exception {
+        mockMvc.perform(get("/admin"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().string("ADMIN Home page"));
     }
 
     // 使用未定义的UserDetails用户测试, 抛出异常

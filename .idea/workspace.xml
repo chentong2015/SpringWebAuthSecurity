@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/common/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/AuthEntryPointHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/WithMockUser.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/common/CommonControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/AdminUserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/UserDetailsControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/user/PreAuthorizeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/model/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/用户参数.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/默认测试用户.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/默认测试用户.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/AuthUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/MockUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/用户角色测试.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/user/PreAuthorizeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/PreAuthorizeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/AuthEntryPointHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/handler/AuthEntryPointHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/UserDetailsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/UserDetailsControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,9 +93,9 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.controller" />
       <recent name="org.example.controller.user" />
       <recent name="org.example.controller.common" />
-      <recent name="org.example.controller" />
       <recent name="" />
       <recent name="org.example" />
     </key>
@@ -121,12 +107,12 @@
       <recent name="main.backend.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdminUserControllerTest">
+  <component name="RunManager" selected="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin">
     <configuration name="AdminUserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-web-security-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.controller.user.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,7 +142,7 @@
       <module name="spring-web-security-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.controller.user.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,27 +153,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockUserControllerTest.testMockUserWithAuthorities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-security-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.controller.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.user.MockUserControllerTest" />
-      <option name="METHOD_NAME" value="testMockUserWithAuthorities" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDetailsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-web-security-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.controller.user.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,13 +168,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDetailsControllerTest.testUserDetailsWithAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-web-security-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.controller.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.controller.user" />
+      <option name="MAIN_CLASS_NAME" value="org.example.controller.user.UserDetailsControllerTest" />
+      <option name="METHOD_NAME" value="testUserDetailsWithAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin" />
         <item itemvalue="JUnit.AdminUserControllerTest" />
         <item itemvalue="JUnit.MockUserControllerTest" />
         <item itemvalue="JUnit.CommonControllerTest" />
         <item itemvalue="JUnit.UserDetailsControllerTest" />
-        <item itemvalue="JUnit.MockUserControllerTest.testMockUserWithAuthorities" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739551907209</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="finish spring web security user testing">
+      <created>1739901589636</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1739901589636</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update auth jwt token" />
     <MESSAGE value="finish auth jwt token" />
     <MESSAGE value="update auth web login module" />
     <MESSAGE value="update session cookie module" />
@@ -551,7 +543,8 @@
     <MESSAGE value="finish spring web http-basic" />
     <MESSAGE value="update spring web security user PreAuthorize test" />
     <MESSAGE value="update spring web security user" />
-    <option name="LAST_COMMIT_MESSAGE" value="update spring web security user" />
+    <MESSAGE value="finish spring web security user testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish spring web security user testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

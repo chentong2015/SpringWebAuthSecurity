@@ -51,6 +51,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
+    // TODO. 以下代码模拟测试@PreAuthorize()注解的授权和认证
     private Authentication buildAuthentication(HttpServletRequest request) {
         AbstractAuthenticationToken authentication;
         String pathUrl = request.getRequestURL().toString();
@@ -72,7 +73,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             // 如果访问带有ROLE要求的API，则403 Forbidden Error
             authentication = new OneTimeTokenAuthenticationToken(null, new ArrayList<>());
         }
-
         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
         return authentication;
     }
