@@ -1,4 +1,4 @@
-package org.example.methd;
+package org.example.method;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;

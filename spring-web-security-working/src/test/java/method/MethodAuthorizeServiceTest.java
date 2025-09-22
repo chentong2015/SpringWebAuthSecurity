@@ -1,6 +1,6 @@
 package method;
 
-import org.example.methd.MethodAuthorizeService;
+import org.example.method.MethodAuthorizeService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
