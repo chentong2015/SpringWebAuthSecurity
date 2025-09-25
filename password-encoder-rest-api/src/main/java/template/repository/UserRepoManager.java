@@ -1,7 +1,7 @@
 package template.repository;
 
 import template.model.UserRequest;
-import encoder.HashingPasswordEncoder;
+import encoder.HashingPwdEncoder;
 import encoder.SaltSecureRandom;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,12 +16,12 @@ public class UserRepoManager {
 
     // 保证Hash加密的Salt一致
     private final SaltSecureRandom saltRandom = new SaltSecureRandom();
-    private final HashingPasswordEncoder passwordEncoder;
+    private final HashingPwdEncoder passwordEncoder;
     private final Map<String, UserDetails> userDetailsMap;
 
     public UserRepoManager() {
         this.userDetailsMap = new ConcurrentHashMap<>();
-        this.passwordEncoder = new HashingPasswordEncoder();
+        this.passwordEncoder = new HashingPwdEncoder();
     }
 
     // TODO. 持久化存储指定的用户(带Role角色授权)

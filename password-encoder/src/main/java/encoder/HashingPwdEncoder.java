@@ -8,7 +8,7 @@ import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import java.security.SecureRandom;
 
 // TODO. 对密码进行Hashing加密处理，避免被破解
-public class HashingPasswordEncoder {
+public class HashingPwdEncoder {
 
     // 1. BCrypt Password Encoder 在加密时通过SecureRandom生成随机Salt
     public String encodePasswordBCrypt(String plainPassword, SecureRandom secureRandom) {
@@ -42,6 +42,7 @@ public class HashingPasswordEncoder {
         return sCryptPasswordEncoder.encode(plainPassword);
     }
 
+    // TODO 推荐使用的安全加密方式
     // 4. Argon2 Password Encoder 添加Salt以及长度的控制
     public String testArgon2PasswordEncoder(String plainPassword) {
         int saltLength = 16; // salt length in bytes
@@ -49,6 +50,9 @@ public class HashingPasswordEncoder {
         int parallelism = 1; // currently not supported by Spring Security
         int memory = 4096;   // memory costs
         int iterations = 3;
+
+        // TODO. 使用最新的Encoder对象
+        Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8();
 
         Argon2PasswordEncoder argon2PasswordEncoder = new Argon2PasswordEncoder(
                 saltLength, hashLength, parallelism, memory, iterations);
