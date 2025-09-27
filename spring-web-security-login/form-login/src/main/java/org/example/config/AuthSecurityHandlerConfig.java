@@ -1,8 +1,8 @@
 package org.example.config;
 
-import org.example.config.handler.CustomAuthFailureHandler;
-import org.example.config.handler.CustomAuthSuccessHandler;
-import org.example.config.handler.CustomLogoutSuccessHandler;
+import org.example.handler.CustomAuthFailureHandler;
+import org.example.handler.CustomAuthSuccessHandler;
+import org.example.handler.CustomLogoutSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

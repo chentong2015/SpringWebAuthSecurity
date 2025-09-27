@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="refresh spring web security">
+    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update auth jwt token example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password-encoder/src/main/java/encoder/HashingPasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder/src/main/java/encoder/HashingPasswordEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomAuthFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomAuthSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomLogoutSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomLogoutSuccessHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +32,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chentong2015"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chentong2015&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chentong2015/SpringWebAuthSecurity.git",
-    "accountId": "a6459d74-1a16-4405-876b-550152fd3c84"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chentong2015/SpringWebAuthSecurity.git&quot;,
+    &quot;accountId&quot;: &quot;a6459d74-1a16-4405-876b-550152fd3c84&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar!/jakarta/servlet/http/HttpSession.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/6.2.4/spring-security-config-6.2.4-sources.jar!/org/springframework/security/config/annotation/web/configuration/EnableWebSecurity.java" root0="SKIP_INSPECTION" />
@@ -49,10 +52,10 @@
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.4/spring-security-core-6.2.4-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.4/spring-security-core-6.2.4-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java" root0="SKIP_INSPECTION" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,10 +67,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ncRim1MbajFS9pyOEY9qCJna5j" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,6 +82,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HttpFormLoginApplication.executor": "Run",
+    "Application.PasswordTester.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -126,7 +131,27 @@
       <recent name="main.backend.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin">
+  <component name="RunManager" selected="Application.PasswordTester">
+    <configuration name="HttpFormLoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HttpFormLoginApplication" />
+      <module name="form-login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PasswordTester" />
+      <module name="password-encoder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdminUserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-web-security-user" />
       <extension name="coverage">
@@ -142,21 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-security-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.controller.common.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.controller.common" />
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.common.CommonControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MockUserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-web-security-user" />
       <extension name="coverage">
@@ -167,21 +177,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.controller.user" />
       <option name="MAIN_CLASS_NAME" value="org.example.controller.user.MockUserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDetailsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-security-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.user.UserDetailsControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -205,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PasswordTester" />
+        <item itemvalue="Application.HttpFormLoginApplication" />
         <item itemvalue="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin" />
         <item itemvalue="JUnit.AdminUserControllerTest" />
         <item itemvalue="JUnit.MockUserControllerTest" />
-        <item itemvalue="JUnit.CommonControllerTest" />
-        <item itemvalue="JUnit.UserDetailsControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -590,12 +585,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthFailureHandler.java</url>
+          <url>file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomAuthFailureHandler.java</url>
           <line>14</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomLogoutSuccessHandler.java</url>
+          <url>file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomLogoutSuccessHandler.java</url>
           <line>14</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>

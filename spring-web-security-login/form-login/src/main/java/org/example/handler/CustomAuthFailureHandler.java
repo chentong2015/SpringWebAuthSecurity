@@ -1,4 +1,4 @@
-package org.example.config.handler;
+package org.example.handler;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
