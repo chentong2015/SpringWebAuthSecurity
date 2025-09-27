@@ -23,7 +23,7 @@ public class AuthSecurityConfig {
             requests.requestMatchers("/logout_process").permitAll();
             requests.anyRequest().authenticated();
         }).formLogin((formLogin) -> {
-            formLogin.loginPage("/login")          // The custom login page
+            formLogin.loginPage("/login")          // 自定义login.html页面
                     .usernameParameter("username") // 定义前端表单提交的参数名称
                     .passwordParameter("password") // 页面提供的<input>数据
                     .loginProcessingUrl("/login_process") // The REST API to submit 接受请求的用户名和密码

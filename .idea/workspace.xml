@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update auth jwt token example">
+    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update web security web">
+      <change afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityHandlerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomAuthFailureHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomAuthSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/handler/CustomLogoutSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/handler/CustomLogoutSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login Web Form.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/Login Web Form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <recent name="main.backend.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PasswordTester">
+  <component name="RunManager" selected="Application.HttpFormLoginApplication">
     <configuration name="HttpFormLoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.HttpFormLoginApplication" />
       <module name="form-login" />
@@ -200,8 +201,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PasswordTester" />
         <item itemvalue="Application.HttpFormLoginApplication" />
+        <item itemvalue="Application.PasswordTester" />
         <item itemvalue="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin" />
         <item itemvalue="JUnit.AdminUserControllerTest" />
         <item itemvalue="JUnit.MockUserControllerTest" />
@@ -535,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758552730241</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update web security web">
+      <option name="closed" value="true" />
+      <created>1758989884717</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1758989884717</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="update auth web login module" />
     <MESSAGE value="update session cookie module" />
     <MESSAGE value="update auth web login API" />
     <MESSAGE value="refresh jwt token" />
@@ -579,7 +587,8 @@
     <MESSAGE value="update spring web security user" />
     <MESSAGE value="finish spring web security user testing" />
     <MESSAGE value="refresh spring web security" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh spring web security" />
+    <MESSAGE value="update web security web" />
+    <option name="LAST_COMMIT_MESSAGE" value="update web security web" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
