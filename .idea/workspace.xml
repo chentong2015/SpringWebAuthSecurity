@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update web security web">
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/用户角色授权.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/Role Authority.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/默认测试用户.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/form-login/src/main/Login Default User.png" afterDir="false" />
+    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="refresh project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729270506915</updated>
       <workItem from="1758815160464" duration="623000" />
+      <workItem from="1761042419566" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="clean project and create new modules">
       <created>1730892699480</created>
