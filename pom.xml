@@ -15,6 +15,7 @@
         <module>spring-web-security-login</module>
         <module>spring-web-security-user</module>
         <module>spring-web-security-working</module>
+        <module>security-training</module>
     </modules>
 
     <properties>

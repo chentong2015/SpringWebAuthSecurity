@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="security-training" />
         <module name="password-encoder-rest-api" />
         <module name="spring-web-security-working" />
         <module name="form-login" />

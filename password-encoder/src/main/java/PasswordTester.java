@@ -1,4 +1,4 @@
-import encoder.HashingPwdEncoder;
+import encoder.HashingPasswordEncoder;
 import encoder.SaltSecureRandom;
 
 import java.util.Arrays;
@@ -9,7 +9,7 @@ public class PasswordTester {
     public static void main(String[] args) {
         SaltSecureRandom saltSecureRandom = new SaltSecureRandom();
 
-        HashingPwdEncoder passwordEncoder = new HashingPwdEncoder();
+        HashingPasswordEncoder passwordEncoder = new HashingPasswordEncoder();
         String encodedPassword = passwordEncoder.encodePasswordBCrypt("password321", saltSecureRandom);
         System.out.println(encodedPassword);
 

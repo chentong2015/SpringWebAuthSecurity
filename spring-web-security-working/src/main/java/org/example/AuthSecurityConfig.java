@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,9 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+
 @Configuration
 @EnableWebSecurity  // 注入HttpSecurity Bean
-@EnableMethodSecurity(prePostEnabled = true) // 配置方法调用层面的授权
+@EnableMethodSecurity(prePostEnabled = true) // 配置方法层面的授权, 代替@EnableGlobalMethodSecurity
 public class AuthSecurityConfig {
 
     @Bean
@@ -19,7 +20,8 @@ public class AuthSecurityConfig {
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
                 // 配置JSESSIONID HttpSession的创建策略
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .sessionManagement(session ->
+                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((requests) -> {
                     requests.requestMatchers("/token/get-token").permitAll();
                     requests.requestMatchers("/health").permitAll();

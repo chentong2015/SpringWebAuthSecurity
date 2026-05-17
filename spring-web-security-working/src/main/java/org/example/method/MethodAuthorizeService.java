@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 // @PreAuthorize: Authorizes the condition before executing the method.
 // @PostAuthorize: Authorizes the condition after the method is executed
-//  @EnableGlobalMethodSecurity(prePostEnabled = true) to our configuration class
 @Service
 public class MethodAuthorizeService {
 

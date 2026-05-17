@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>spring-web-security-login</artifactId>
+        <artifactId>SpringWebAuthSecurity</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>http-basic</artifactId>
+    <artifactId>security-training</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,21 +20,14 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>3.2.5</version>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>4.0.6</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-            <version>3.2.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-            <version>6.2.4</version>
-            <scope>compile</scope>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>4.0.6</version>
         </dependency>
     </dependencies>
 </project>

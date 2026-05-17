@@ -13,8 +13,8 @@
     <artifactId>spring-web-security-login</artifactId>
 
     <modules>
-        <module>form-login</module>
-        <module>http-basic</module>
+        <module>login-form</module>
+        <module>login-http-basic</module>
     </modules>
 
     <properties>
