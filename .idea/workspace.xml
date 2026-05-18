@@ -4,33 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="add security training module">
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/SignupServerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/form/SignInForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/form/SignUpForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/jwt/JwtTokenHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/jwt/TokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/LoginAttemptCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/LoginAttemptEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/UserAuthEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/repo/LoginAttemptCounterRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/repo/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/login_template/service/CaptchaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="add security training login template">
+      <change afterPath="$PROJECT_DIR$/security-training/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/repository/UserRepoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/service/UserRepoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/password-encoder-rest-api/src/main/java/template/rest/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/org/example/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/org/example/WebSecurityTrainingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityTrainingApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/static/test.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/static/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +117,11 @@
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\security-training\src\main\resources" />
       <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-login\login-http-basic" />
       <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-login\login-form" />
       <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\security-training\notice-training" />
       <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\test\java" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-user\src\test\java\org\example\controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.controller" />
@@ -255,7 +232,7 @@
       <workItem from="1758815160464" duration="623000" />
       <workItem from="1761042419566" duration="91000" />
       <workItem from="1779030130306" duration="6635000" />
-      <workItem from="1779090982340" duration="6931000" />
+      <workItem from="1779090982340" duration="9050000" />
     </task>
     <task id="LOCAL-00001" summary="clean project and create new modules">
       <created>1730892699480</created>
@@ -582,7 +559,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779037140989</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add security training login template">
+      <option name="closed" value="true" />
+      <created>1779097945434</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1779097945434</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add security training login template">
+      <option name="closed" value="true" />
+      <created>1779097956242</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1779097956242</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="update auth web login API" />
     <MESSAGE value="refresh jwt token" />
     <MESSAGE value="reset web security project" />
     <MESSAGE value="update auth web login session" />
@@ -626,7 +618,8 @@
     <MESSAGE value="refresh spring web security" />
     <MESSAGE value="update web security web" />
     <MESSAGE value="add security training module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add security training module" />
+    <MESSAGE value="add security training login template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add security training login template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

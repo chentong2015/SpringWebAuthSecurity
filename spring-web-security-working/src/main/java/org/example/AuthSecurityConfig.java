@@ -14,12 +14,12 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity(prePostEnabled = true) // 配置方法层面的授权, 代替@EnableGlobalMethodSecurity
 public class AuthSecurityConfig {
 
+    // 配置JSESSIONID HttpSession的创建策略
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         System.out.println("Inject bean FilterChain");
         httpSecurity.cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
-                // 配置JSESSIONID HttpSession的创建策略
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((requests) -> {
