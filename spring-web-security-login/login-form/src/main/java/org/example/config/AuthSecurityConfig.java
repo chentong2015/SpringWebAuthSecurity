@@ -23,17 +23,16 @@ public class AuthSecurityConfig {
             requests.requestMatchers("/logout_process").permitAll();
             requests.anyRequest().authenticated();
         }).formLogin((formLogin) -> {
-            formLogin.loginPage("/login")          // 自定义login.html页面
-                    .usernameParameter("username") // 定义前端表单提交的参数名称
-                    .passwordParameter("password") // 页面提供的<input>数据
-                    .loginProcessingUrl("/login_process") // The REST API to submit 接受请求的用户名和密码
-                    .defaultSuccessUrl("/home")    // The landing page after a successful login
+            formLogin.loginPage("/login")                  // 自定义login.html页面
+                    .usernameParameter("username")         // 定义前端表单提交的参数名称
+                    .passwordParameter("password")         // 页面提供的<input>数据
+                    .loginProcessingUrl("/login_process")  // The REST API to submit 接受请求的用户名和密码
+                    .defaultSuccessUrl("/home")            // The landing page after a successful login
                     .failureUrl("/login?error=true");
         }).logout((logout) -> {
-            logout.logoutUrl("/logout_process")    // The Rest API to process logout 用于接受登出请求
-                    // .logoutRequestMatcher(new AntPathRequestMatcher("/logout_process"))
+            logout.logoutUrl("/logout_process")             // The Rest API to process logout 用于接受登出请求
                     .logoutSuccessUrl("/login?logout=true") // 登出之后返回到Login登录页面
-                    .invalidateHttpSession(true)   // 将Spring生成的JSESSIONID数据删除
+                    .invalidateHttpSession(true)            // 将Spring生成的JSESSIONID数据删除
                     .deleteCookies("JSESSIONID");
                 });
         return http.build();

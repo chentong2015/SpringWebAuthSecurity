@@ -25,10 +25,10 @@
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-password/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-session-cookie/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-projects/web-session-cookie/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-web-security-login/form-login/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-web-security-login/http-basic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-login/login-form/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-login/login-form/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-login/login-http-basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-web-security-login/login-http-basic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security-login/oauth2-login/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web-security-login/src/main/java" charset="UTF-8" />

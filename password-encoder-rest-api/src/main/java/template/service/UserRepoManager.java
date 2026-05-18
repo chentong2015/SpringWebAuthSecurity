@@ -1,4 +1,4 @@
-package template.repository;
+package template.service;
 
 import template.model.UserRequest;
 import encoder.HashingPasswordEncoder;
@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-// 模拟DAO持久层数据检索和存储: 需要进一步考虑并发请求
+// 模拟DAO持久层数据检索和存储
+// - 需要进一步考虑并发请求
+// - 数据应该做持久化存储
 @Service
 public class UserRepoManager {
 
@@ -29,6 +31,7 @@ public class UserRepoManager {
         if (isFoundUser(userRequest)) {
             return false;
         }
+
         String encodePassword = this.passwordEncoder.encodePasswordBCrypt(userRequest.getPassword(), saltRandom);
         UserDetails newUser = User.withUsername(userRequest.getUsername())
                 .password(encodePassword)

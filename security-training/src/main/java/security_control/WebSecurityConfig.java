@@ -1,4 +1,4 @@
-package org.example;
+package security_control;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,6 +38,11 @@ public class WebSecurityConfig {
             requests.anyRequest().authenticated();
         });
         httpSecurity.formLogin(Customizer.withDefaults());
+
+        // Logout登出请求必须使用POST请求
+        httpSecurity.logout((logout) -> {
+            // logout.logoutRequestMatcher(new AntPathRequestMatcher("/logout_process", "POST"));
+        });
         return httpSecurity.build();
     }
 

@@ -1,7 +1,7 @@
 package template.rest;
 
 import template.model.UserRequest;
-import template.repository.UserRepoManager;
+import template.service.UserRepoManager;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +13,11 @@ import policy.PasswordValidator;
 @RestController
 public class RegistrationController {
 
-    private final UserRepoManager userService;
+    private final UserRepoManager userRepoManager;
     private final PasswordValidator passwordValidator;
 
-    public RegistrationController(UserRepoManager userService) {
-        this.userService = userService;
+    public RegistrationController(UserRepoManager userRepoManager) {
+        this.userRepoManager = userRepoManager;
         this.passwordValidator = new PasswordValidator();
     }
 
@@ -29,7 +29,7 @@ public class RegistrationController {
            return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Password is not match Policy !");
         }
 
-        if (this.userService.persistUser(userRequest)) {
+        if (this.userRepoManager.persistUser(userRequest)) {
             return ResponseEntity.ok().body("Success: Sign up done !");
         }
         return ResponseEntity.badRequest().body("Error: Sign up failed !");
