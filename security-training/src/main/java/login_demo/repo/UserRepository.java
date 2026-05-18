@@ -1,7 +1,7 @@
-package login_template.repo;
+package login_demo.repo;
 
-import login_template.model.User;
-import login_template.model.UserAuthEntity;
+import login_demo.model.User;
+import login_demo.model.UserAuthEntity;
 
 import java.util.Optional;
 

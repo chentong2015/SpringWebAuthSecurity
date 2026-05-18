@@ -3,8 +3,6 @@ package org.example.method;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
-// @PreAuthorize: Authorizes the condition before executing the method.
-// @PostAuthorize: Authorizes the condition after the method is executed
 @Service
 public class MethodAuthorizeService {
 

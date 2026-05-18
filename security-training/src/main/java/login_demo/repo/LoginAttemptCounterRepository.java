@@ -1,7 +1,7 @@
-package login_template.repo;
+package login_demo.repo;
 
-import login_template.model.LoginAttemptCounter;
-import login_template.model.User;
+import login_demo.model.LoginAttemptCounter;
+import login_demo.model.User;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package login_template.model;
+package login_demo.model;
 
 // @Entity
 public class UserAuthEntity {

@@ -1,4 +1,4 @@
-package login_template.form;
+package login_demo.form;
 
 import lombok.Getter;
 

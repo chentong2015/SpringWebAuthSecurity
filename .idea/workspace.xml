@@ -4,10 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="add security training login template">
-      <change afterPath="$PROJECT_DIR$/security-training/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update security training">
+      <change afterPath="$PROJECT_DIR$/security-training/src/main/java/security_control/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/method/AuthorizeMethodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/method/AuthorizeMethodService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/SignupServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/SignupServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/form/SignInForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignInForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/form/SignUpForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignUpForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/jwt/JwtTokenHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/JwtTokenHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/jwt/TokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/TokenDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/LoginAttemptCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/LoginAttemptEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/model/UserAuthEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/UserAuthEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/repo/LoginAttemptCounterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/LoginAttemptCounterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_template/service/CaptchaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/login_demo/service/CaptchaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-login/login-form/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/PreAuthorizeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/common/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/method/MethodAuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/method/MethodAuthorizeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -102,7 +127,7 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Work/Work My Projects/Java Spring Web/SpringWebAuthSecurity/security-training/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.16158818",
     "project.structure.side.proportion": "0.3448276",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
@@ -163,7 +188,7 @@
       <module name="spring-web-security-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.controller.*" />
+          <option name="PATTERN" value="org.example.method.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,7 +203,7 @@
       <module name="spring-web-security-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.controller.user.*" />
+          <option name="PATTERN" value="org.example.method.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,7 +257,7 @@
       <workItem from="1758815160464" duration="623000" />
       <workItem from="1761042419566" duration="91000" />
       <workItem from="1779030130306" duration="6635000" />
-      <workItem from="1779090982340" duration="9050000" />
+      <workItem from="1779090982340" duration="16057000" />
     </task>
     <task id="LOCAL-00001" summary="clean project and create new modules">
       <created>1730892699480</created>
@@ -575,7 +600,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779097956242</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="update security training">
+      <option name="closed" value="true" />
+      <created>1779100323702</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1779100323702</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +627,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="refresh jwt token" />
     <MESSAGE value="reset web security project" />
     <MESSAGE value="update auth web login session" />
     <MESSAGE value="update web login session frontend web pages" />
@@ -619,7 +651,8 @@
     <MESSAGE value="update web security web" />
     <MESSAGE value="add security training module" />
     <MESSAGE value="add security training login template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add security training login template" />
+    <MESSAGE value="update security training" />
+    <option name="LAST_COMMIT_MESSAGE" value="update security training" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

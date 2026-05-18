@@ -13,8 +13,8 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
-@EnableWebSecurity
-@EnableMethodSecurity // 1. 激活在方法层面的权限授权配置
+@EnableWebSecurity // 注入HttpSecurity Bean
+@EnableMethodSecurity // 激活方法层面的权限控制, 创建AOP代理执行方法前后的判断和过滤
 public class AuthSecurityConfig {
 
     @Autowired
@@ -23,7 +23,7 @@ public class AuthSecurityConfig {
     @Autowired
     private AuthEntryPointHandler authEntryPointHandler;
 
-    // 2. 设置在SecurityFilter过滤层面的权限配置
+    // 设置在SecurityFilter过滤层面的权限配置
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.cors(AbstractHttpConfigurer::disable)

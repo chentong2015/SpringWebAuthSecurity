@@ -10,8 +10,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableWebSecurity  // 注入HttpSecurity Bean
-@EnableMethodSecurity(prePostEnabled = true) // 配置方法层面的授权, 代替@EnableGlobalMethodSecurity
+@EnableWebSecurity
+@EnableMethodSecurity
 public class AuthSecurityConfig {
 
     // 配置JSESSIONID HttpSession的创建策略

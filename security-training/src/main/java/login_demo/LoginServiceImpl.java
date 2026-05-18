@@ -1,15 +1,15 @@
-package login_template;
+package login_demo;
 
 import jakarta.servlet.http.HttpServletRequest;
-import login_template.form.SignInForm;
-import login_template.jwt.JwtTokenHelper;
-import login_template.model.LoginAttemptCounter;
-import login_template.model.User;
-import login_template.model.UserAuthEntity;
-import login_template.jwt.TokenDto;
-import login_template.repo.LoginAttemptCounterRepository;
-import login_template.repo.UserRepository;
-import login_template.service.CaptchaService;
+import login_demo.form.SignInForm;
+import login_demo.jwt.JwtTokenHelper;
+import login_demo.model.LoginAttemptCounter;
+import login_demo.model.User;
+import login_demo.model.UserAuthEntity;
+import login_demo.jwt.TokenDto;
+import login_demo.repo.LoginAttemptCounterRepository;
+import login_demo.repo.UserRepository;
+import login_demo.service.CaptchaService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;

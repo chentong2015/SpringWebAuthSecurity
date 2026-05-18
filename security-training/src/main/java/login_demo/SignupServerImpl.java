@@ -1,11 +1,11 @@
-package login_template;
+package login_demo;
 
-import login_template.jwt.JwtTokenHelper;
-import login_template.jwt.TokenDto;
-import login_template.form.SignUpForm;
-import login_template.model.User;
-import login_template.repo.UserRepository;
-import login_template.service.CaptchaService;
+import login_demo.jwt.JwtTokenHelper;
+import login_demo.jwt.TokenDto;
+import login_demo.form.SignUpForm;
+import login_demo.model.User;
+import login_demo.repo.UserRepository;
+import login_demo.service.CaptchaService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
