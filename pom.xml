@@ -12,7 +12,6 @@
     <modules>
         <module>password-encoder</module>
         <module>password-encoder-rest-api</module>
-        <module>security-training</module>
         <module>spring-web-security-login</module>
         <module>spring-web-security-role</module>
         <module>spring-web-security-test</module>

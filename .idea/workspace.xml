@@ -4,262 +4,76 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="update security training">
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/FilterObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/必须找到特定参数名.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/role_permission/MethodPermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/role_permission/Role Authority.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="35cc28ed-6647-4a48-b9a6-7f1fe93932a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/Role Authority.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/SpringWebSecurityApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/SpringWebSecurityApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/config/AuthUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/AuthUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/handler/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/handler/AuthEntryPointHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/handler/AuthEntryPointHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/method/AuthorizeMethodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/role_permission/MethodPermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/method/AuthorizeMethodService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/model/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/service/DBUserDetailsPasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/service/DBUserDetailsPasswordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/service/UserDetails Services.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/service/UserDetails Services.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/users/AuthUserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/java/org/example/users/AuthUserPropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/users/AuthUserPropertiesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/WithMockUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/java/WithMockUser.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/common/CommonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/java/org/example/controller/common/CommonControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/AdminUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/java/org/example/controller/user/AdminUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/MockUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/java/org/example/controller/user/MockUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/java/org/example/controller/user/UserDetailsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/java/org/example/controller/user/UserDetailsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-user/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/WebSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/WebSecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/controller/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/filter/CustomHeaderValidatorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/filter/CustomHeaderValidatorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/handler/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAuthFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/handler/CustomAuthFailureHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/CustomAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/handler/CustomAuthSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/handler/UserAuthenticationErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/handler/UserAuthenticationErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/java/org/example/method/MethodAuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/java/org/example/method/MethodAuthorizeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/test/java/controller/SecurityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/test/java/controller/SecurityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web-security-working/src/test/java/method/MethodAuthorizeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-test/src/test/java/method/MethodAuthorizeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/LoginServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/SignupServerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignInForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignUpForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/JwtTokenHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/TokenDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/UserAuthEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/LoginAttemptCounterRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/service/CaptchaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityTrainingApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="spring-beans.schema" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="ges" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;chentong2015&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "chentong2015"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/chentong2015/SpringWebAuthSecurity.git&quot;,
-    &quot;accountId&quot;: &quot;a6459d74-1a16-4405-876b-550152fd3c84&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/chentong2015/SpringWebAuthSecurity.git",
+    "accountId": "a6459d74-1a16-4405-876b-550152fd3c84"
   }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar!/jakarta/servlet/http/HttpSession.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/6.2.4/spring-security-config-6.2.4-sources.jar!/org/springframework/security/config/annotation/web/configuration/EnableWebSecurity.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/6.2.4/spring-security-config-6.2.4-sources.jar!/org/springframework/security/config/annotation/web/configurers/AuthorizeHttpRequestsConfigurer.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/6.3.4/spring-security-config-6.3.4-sources.jar!/org/springframework/security/config/http/SessionCreationPolicy.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.4/spring-security-core-6.2.4-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.2.4/spring-security-core-6.2.4-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="customMavenHome" value="$PROJECT_DIR$/../../../Softwares/Maven/apache-maven-3.8.8" />
-        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2ncRim1MbajFS9pyOEY9qCJna5j" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="3FS69c4M98cssLhrvNZuvbTj55E" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.HttpFormLoginApplication.executor": "Run",
-    "Application.PasswordTester.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SpringWebSecurityApp.executor": "Debug",
-    "Spring Boot.WebSecurityTrainingApp.executor": "Run",
-    "ToolWindowRun.ShowToolbar": "false",
     "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/chent5/OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc/Desktop/hogwarts-artifacts-online-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Work/Work My Projects/Java Spring Web/SpringWebAuthSecurity/security-training/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.16158818",
-    "project.structure.side.proportion": "0.3448276",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\resources\templates" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\spring-web-security-login\form-login\src\main\java\org\example" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\authentication\handler" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend" />
-      <recent name="C:\Work\Work My Projects\Java Spring Master\SpringWebAuthSecurity\auth-web-login-session\src\main\java\main\backend\repository" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example\object_permission" />
-      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example\permission" />
-      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-user\src\main\java\org\example\method" />
-      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\security-training\src\main\resources" />
-      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-login\login-http-basic" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.example.controller" />
-      <recent name="org.example.controller.user" />
-      <recent name="org.example.controller.common" />
-      <recent name="" />
-      <recent name="org.example" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.filter" />
-      <recent name="org.example.repository" />
-      <recent name="org.example" />
-      <recent name="org.example.config" />
-      <recent name="main.backend.service" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.SpringWebSecurityApp">
-    <configuration name="HttpFormLoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.HttpFormLoginApplication" />
-      <module name="login-form" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="security_control.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PasswordTester" />
-      <module name="password-encoder" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDetailsControllerTest.testUserDetailsWithAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-security-role" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.role_permission.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.user.UserDetailsControllerTest" />
-      <option name="METHOD_NAME" value="testUserDetailsWithAdmin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringWebSecurityApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-web-security-role" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.SpringWebSecurityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebSecurityTrainingApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="security-training" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="security_control.WebSecurityTrainingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="security_control.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.SpringWebSecurityApp" />
-        <item itemvalue="Spring Boot.WebSecurityTrainingApp" />
-        <item itemvalue="Application.HttpFormLoginApplication" />
-        <item itemvalue="Application.PasswordTester" />
-        <item itemvalue="JUnit.UserDetailsControllerTest.testUserDetailsWithAdmin" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -268,454 +82,18 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="00ed73fb-bdee-4769-aca5-847caab98392" name="Changes" comment="" />
-      <created>1729270506915</created>
+      <changelist id="35cc28ed-6647-4a48-b9a6-7f1fe93932a7" name="Changes" comment="" />
+      <created>1782055972740</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729270506915</updated>
-      <workItem from="1758815160464" duration="623000" />
-      <workItem from="1761042419566" duration="91000" />
-      <workItem from="1779030130306" duration="6635000" />
-      <workItem from="1779090982340" duration="16057000" />
-      <workItem from="1779179775211" duration="5762000" />
+      <updated>1782055972740</updated>
+      <workItem from="1782055973938" duration="153000" />
     </task>
-    <task id="LOCAL-00001" summary="clean project and create new modules">
-      <created>1730892699480</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1730892699480</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update jwt token module">
-      <created>1730894090872</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1730894090872</updated>
-    </task>
-    <task id="LOCAL-00003" summary="update auth jwt token example">
-      <created>1730909640932</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1730909640932</updated>
-    </task>
-    <task id="LOCAL-00004" summary="update auth password and web login">
-      <created>1730911419813</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1730911419813</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update auth password policy and validator">
-      <created>1731001119729</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1731001119729</updated>
-    </task>
-    <task id="LOCAL-00006" summary="clean UI page html file">
-      <created>1731081879602</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1731081879602</updated>
-    </task>
-    <task id="LOCAL-00007" summary="update salt bytes generator">
-      <created>1731086164346</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1731086164346</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update web https module structure">
-      <created>1731264037943</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1731264037943</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update auth jwt token">
-      <created>1731928186183</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1731928186183</updated>
-    </task>
-    <task id="LOCAL-00010" summary="finish auth jwt token">
-      <created>1731943999461</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1731943999461</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update auth web login module">
-      <created>1731951757453</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1731951757453</updated>
-    </task>
-    <task id="LOCAL-00012" summary="refresh project">
-      <created>1732205577785</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1732205577785</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update session cookie module">
-      <created>1732205662089</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1732205662089</updated>
-    </task>
-    <task id="LOCAL-00014" summary="update auth web login API">
-      <created>1732298035139</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1732298035139</updated>
-    </task>
-    <task id="LOCAL-00015" summary="refresh jwt token">
-      <created>1732298122195</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1732298122195</updated>
-    </task>
-    <task id="LOCAL-00016" summary="reset web security project">
-      <created>1732299717446</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1732299717446</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update auth web login session">
-      <created>1732388857825</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1732388857825</updated>
-    </task>
-    <task id="LOCAL-00018" summary="update web login session frontend web pages">
-      <created>1732468500571</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1732468500571</updated>
-    </task>
-    <task id="LOCAL-00019" summary="update web login session module">
-      <created>1732469016063</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1732469016063</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update web login session: add sqlite database">
-      <created>1732476522130</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1732476522130</updated>
-    </task>
-    <task id="LOCAL-00021" summary="create auth login session backend">
-      <created>1732536985225</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1732536985225</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update auth login session web pages">
-      <created>1732544235746</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1732544235746</updated>
-    </task>
-    <task id="LOCAL-00023" summary="update auth login session - finish authentication">
-      <created>1732553605202</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1732553605202</updated>
-    </task>
-    <task id="LOCAL-00024" summary="update auth login session - finish project">
-      <created>1732555455648</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1732555455648</updated>
-    </task>
-    <task id="LOCAL-00025" summary="clean auth user session module">
-      <created>1737643951070</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1737643951070</updated>
-    </task>
-    <task id="LOCAL-00026" summary="refresh spring web security base">
-      <created>1737646143983</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1737646143983</updated>
-    </task>
-    <task id="LOCAL-00027" summary="refresh project">
-      <created>1737745508262</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1737745508262</updated>
-    </task>
-    <task id="LOCAL-00028" summary="refresh project">
-      <created>1738258609855</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1738258609855</updated>
-    </task>
-    <task id="LOCAL-00029" summary="update login http basic and handler">
-      <created>1738344885902</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1738344885902</updated>
-    </task>
-    <task id="LOCAL-00030" summary="update form login module">
-      <created>1738348370008</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1738348370008</updated>
-    </task>
-    <task id="LOCAL-00031" summary="refresh project">
-      <created>1738348640003</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1738348640003</updated>
-    </task>
-    <task id="LOCAL-00032" summary="complete form login demo">
-      <created>1738433767052</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1738433767052</updated>
-    </task>
-    <task id="LOCAL-00033" summary="refresh project">
-      <created>1738515354032</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1738515354032</updated>
-    </task>
-    <task id="LOCAL-00034" summary="refresh project">
-      <created>1738520060795</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1738520060795</updated>
-    </task>
-    <task id="LOCAL-00035" summary="update spring web security user">
-      <created>1738693471817</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1738693471817</updated>
-    </task>
-    <task id="LOCAL-00036" summary="update spring web security user">
-      <created>1739186178547</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1739186178547</updated>
-    </task>
-    <task id="LOCAL-00037" summary="update spring web http-basic">
-      <created>1739190228161</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1739190228161</updated>
-    </task>
-    <task id="LOCAL-00038" summary="finish spring web http-basic">
-      <created>1739203409238</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1739203409238</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update spring web security user">
-      <created>1739211050236</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1739211050236</updated>
-    </task>
-    <task id="LOCAL-00040" summary="update spring web security user">
-      <created>1739379282813</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1739379282813</updated>
-    </task>
-    <task id="LOCAL-00041" summary="update spring web security user PreAuthorize test">
-      <created>1739382154185</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1739382154185</updated>
-    </task>
-    <task id="LOCAL-00042" summary="update spring web security user">
-      <created>1739551907209</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1739551907209</updated>
-    </task>
-    <task id="LOCAL-00043" summary="finish spring web security user testing">
-      <created>1739901589636</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1739901589636</updated>
-    </task>
-    <task id="LOCAL-00044" summary="refresh spring web security">
-      <option name="closed" value="true" />
-      <created>1758552730241</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1758552730241</updated>
-    </task>
-    <task id="LOCAL-00045" summary="update web security web">
-      <option name="closed" value="true" />
-      <created>1758989884717</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1758989884717</updated>
-    </task>
-    <task id="LOCAL-00046" summary="add security training module">
-      <option name="closed" value="true" />
-      <created>1779037140989</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1779037140989</updated>
-    </task>
-    <task id="LOCAL-00047" summary="add security training login template">
-      <option name="closed" value="true" />
-      <created>1779097945434</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1779097945434</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add security training login template">
-      <option name="closed" value="true" />
-      <created>1779097956242</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1779097956242</updated>
-    </task>
-    <task id="LOCAL-00049" summary="update security training">
-      <option name="closed" value="true" />
-      <created>1779100323702</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1779100323702</updated>
-    </task>
-    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="reset web security project" />
-    <MESSAGE value="update auth web login session" />
-    <MESSAGE value="update web login session frontend web pages" />
-    <MESSAGE value="update web login session module" />
-    <MESSAGE value="update web login session: add sqlite database" />
-    <MESSAGE value="create auth login session backend" />
-    <MESSAGE value="update auth login session web pages" />
-    <MESSAGE value="update auth login session - finish authentication" />
-    <MESSAGE value="update auth login session - finish project" />
-    <MESSAGE value="clean auth user session module" />
-    <MESSAGE value="refresh spring web security base" />
-    <MESSAGE value="update login http basic and handler" />
-    <MESSAGE value="update form login module" />
-    <MESSAGE value="complete form login demo" />
-    <MESSAGE value="refresh project" />
-    <MESSAGE value="update spring web http-basic" />
-    <MESSAGE value="finish spring web http-basic" />
-    <MESSAGE value="update spring web security user PreAuthorize test" />
-    <MESSAGE value="update spring web security user" />
-    <MESSAGE value="finish spring web security user testing" />
-    <MESSAGE value="refresh spring web security" />
-    <MESSAGE value="update web security web" />
-    <MESSAGE value="add security training module" />
-    <MESSAGE value="add security training login template" />
-    <MESSAGE value="update security training" />
-    <option name="LAST_COMMIT_MESSAGE" value="update security training" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-login/login-form/src/main/java/org/example/handler/CustomAuthFailureHandler.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-login/login-form/src/main/java/org/example/handler/CustomLogoutSuccessHandler.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-login/login-http-basic/src/main/java/org/example/config/CustomHttpBasicAuthEntryPoint.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionEvaluator.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest" memberName="request" />
-        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="authorities" />
-      </pinned-members>
-    </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="((HeaderWriterResponse)response).response" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterResponse" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
