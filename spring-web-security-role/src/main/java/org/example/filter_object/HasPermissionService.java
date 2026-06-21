@@ -1,4 +1,4 @@
-package org.example.object_permission;
+package org.example.filter_object;
 
 import org.springframework.security.access.prepost.PostFilter;
 import org.springframework.security.access.prepost.PreFilter;

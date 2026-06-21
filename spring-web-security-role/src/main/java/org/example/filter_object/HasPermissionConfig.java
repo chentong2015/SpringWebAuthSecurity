@@ -1,4 +1,4 @@
-package org.example.object_permission;
+package org.example.filter_object;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,8 +13,7 @@ public class HasPermissionConfig {
 
     // 设置自定义的PermissionEvaluator对象
     @Bean
-    public MethodSecurityExpressionHandler
-    methodSecurityExpressionHandler(PermissionEvaluator permissionEvaluator) {
+    public MethodSecurityExpressionHandler methodSecurityExpressionHandler(PermissionEvaluator permissionEvaluator) {
         DefaultMethodSecurityExpressionHandler handler = new DefaultMethodSecurityExpressionHandler();
         handler.setPermissionEvaluator(permissionEvaluator);
         return handler;

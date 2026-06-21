@@ -1,6 +1,6 @@
 package org.example.role_permission;
 
-import org.example.object_permission.FilterObject;
+import org.example.filter_object.FilterObject;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;

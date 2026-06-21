@@ -4,33 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35cc28ed-6647-4a48-b9a6-7f1fe93932a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="35cc28ed-6647-4a48-b9a6-7f1fe93932a7" name="Changes" comment="remove security training module">
+      <change afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/注解失效异常.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/LoginServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/SignupServerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignInForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/form/SignUpForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/JwtTokenHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/jwt/TokenDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptCounter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/LoginAttemptEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/model/UserAuthEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/LoginAttemptCounterRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/repo/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/login_demo/service/CaptchaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/java/security_control/WebSecurityTrainingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-training/src/main/resources/application-conf.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/AuthSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/AuthSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/AuthUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/users/AuthUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/handler/AuthEntryPointHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/handler/AuthEntryPointHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/handler/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/handler/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/FilterObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/FilterObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/HasPermissionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/HasPermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/FilterObjectPermissionEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/HasPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/HasPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/object_permission/必须找到特定参数名.png" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/filter_object/参数名称异常.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/role_permission/MethodPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/role_permission/MethodPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/users/AuthUserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/users/AuthUserProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/users/AuthUserPropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web-security-role/src/main/java/org/example/config/users/AuthUserPropertiesConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +29,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chentong2015"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chentong2015&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chentong2015/SpringWebAuthSecurity.git",
-    "accountId": "a6459d74-1a16-4405-876b-550152fd3c84"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chentong2015/SpringWebAuthSecurity.git&quot;,
+    &quot;accountId&quot;: &quot;a6459d74-1a16-4405-876b-550152fd3c84&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3FS69c4M98cssLhrvNZuvbTj55E" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -70,10 +63,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Work My Projects\Java Spring Web\SpringWebAuthSecurity\spring-web-security-role\src\main\java\org\example\filter_object" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,5 +100,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
   </component>
 </project>

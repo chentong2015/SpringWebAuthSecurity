@@ -1,4 +1,4 @@
-package org.example.object_permission;
+package org.example.filter_object;
 
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 // TODO. 自定义hasPermission()方法逻辑，基于特定Object判断权限
 @Component
-public class HasPermissionEvaluator implements PermissionEvaluator {
+public class FilterObjectPermissionEvaluator implements PermissionEvaluator {
 
     @Override
     public boolean hasPermission(Authentication authentication, Object targetDomainObject, Object permission) {
@@ -17,7 +17,6 @@ public class HasPermissionEvaluator implements PermissionEvaluator {
         if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
             return true;
         }
-
         // 用户只能操作自己的订单
         // String username = authentication.getName();
         // return filterObject.getOwner().equals(username);

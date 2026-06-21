@@ -1,4 +1,4 @@
-package org.example.users;
+package org.example.config.users;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.security.core.userdetails.User;

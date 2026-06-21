@@ -1,4 +1,4 @@
-package org.example.object_permission;
+package org.example.filter_object;
 
 public class FilterObject {
 

@@ -1,7 +1,7 @@
-package org.example.config;
+package org.example;
 
-import org.example.handler.AuthEntryPointHandler;
-import org.example.handler.JwtAuthenticationFilter;
+import org.example.config.handler.AuthEntryPointHandler;
+import org.example.config.handler.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

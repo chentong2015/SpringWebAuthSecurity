@@ -1,4 +1,4 @@
-package org.example.object_permission;
+package org.example.filter_object;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
