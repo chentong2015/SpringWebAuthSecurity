@@ -13,9 +13,11 @@ public class CustomHttpBasicAuthEntryPoint implements AuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
-        // response.addHeader("WWW-Authenticate", "Basic");
-        // response.addHeader("WWW-Authenticate", "Basic realm=\"Realm\"");
+        // Auth失败时默认设置返回Header, 并显示弹框
+        response.addHeader("WWW-Authenticate", "Basic");
+        response.setHeader("WWW-Authenticate", "Basic realm=\"Realm\"");
 
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage());
+        // 如果直接401认证错误, 等效取消popup弹框效果
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
     }
 }

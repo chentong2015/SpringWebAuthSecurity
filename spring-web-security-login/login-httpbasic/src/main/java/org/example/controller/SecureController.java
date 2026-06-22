@@ -3,22 +3,12 @@ package org.example.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// TODO. 当User通过表单的账号验证后才能访问的API
 @RestController
 public class SecureController {
 
-    @GetMapping("/")
-    public String index() {
-        return "redirect:home";
-    }
-
-    @GetMapping("/home")
+    @GetMapping("/secure")
     public String secure() {
-        return "Welcome to Secure Page";
-    }
-
-    @GetMapping("/api")
-    public String api() {
-        return "Welcome to API Page";
+        System.out.println("Access Secure");
+        return "This is secure info";
     }
 }
