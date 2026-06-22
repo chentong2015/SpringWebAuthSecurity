@@ -1,0 +1,4 @@
+使用第三方平台登录到Web应用, 无需用户重新注册
+通过第三方平台提供的API验证用户信息(请求访问令牌, 获取客户端凭据)
+
+https://www.baeldung.com/spring-security-5-oauth2-login
