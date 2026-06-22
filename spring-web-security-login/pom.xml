@@ -14,7 +14,7 @@
 
     <modules>
         <module>login-form</module>
-        <module>login-http-basic</module>
+        <module>login-httpbasic</module>
     </modules>
 
     <properties>

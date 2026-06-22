@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.model.UserRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
@@ -20,9 +21,9 @@ public class LoginController {
         this.authenticationManager = authenticationManager;
     }
 
-    // TODO. 创建用于AuthenticationManager认证的Authentication对象(认证通过与否)
+    // TODO. 用于AuthenticationManager认证的Authentication对象(认证通过与否)
     @PostMapping("/login")
-    @PreAuthorize("permitAll()") // Endpoint可以自由访问, 任意用户都能被认证成功
+    @PreAuthorize("permitAll()")
     public ResponseEntity<?> loginUser(@RequestBody UserRequest userRequest) {
         System.out.println(userRequest);
         String username = userRequest.getUsername();
@@ -34,24 +35,5 @@ public class LoginController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         return ResponseEntity.ok().body("Created Success");
-    }
-
-    class UserRequest {
-
-        private String username;
-        private String password;
-
-        public UserRequest(String username, String password) {
-            this.username = username;
-            this.password = password;
-        }
-
-        public String getUsername() {
-            return username;
-        }
-
-        public String getPassword() {
-            return password;
-        }
     }
 }

@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="password-encoder-rest-api" />
         <module name="spring-web-security-role" />
+        <module name="login-httpbasic" />
         <module name="login-form" />
         <module name="spring-web-security-test" />
-        <module name="login-http-basic" />
         <module name="password-encoder" />
       </profile>
     </annotationProcessing>
